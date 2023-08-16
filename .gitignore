@@ -2,3 +2,5 @@
 desktop.ini
 Pipfile
 Pipfile.lock
+.venv/
+**/__pycache__/
