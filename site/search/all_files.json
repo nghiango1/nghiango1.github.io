@@ -576,6 +576,12 @@
         "url": "notes/Program%20Language/Rush/"
     },
     {
+        "src_uri": "notes/docs/index.md",
+        "dest_uri": "notes/docs/",
+        "name": "index",
+        "url": "notes/docs/"
+    },
+    {
         "src_uri": "assets/images/favicon.png",
         "dest_uri": "assets/images/favicon.png",
         "name": "favicon",
