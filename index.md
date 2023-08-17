@@ -1,6 +1,7 @@
 ---
 title: Material for MkDocs
 share: true
+catagory: ""
 ---
 
 Welcome to homepage. Latest problem
