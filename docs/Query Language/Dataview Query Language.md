@@ -10,7 +10,7 @@ catagory: "Query Language"
 Or LIST/TABLE can be used to render the content
 
 ```dql
-LIST <column>
+TABLE WITHOUT ID "[[" + file.name + "|" + file.name + "]]" as "Problem", <column>
 FROM <file/folder/tag>
 WHERE <expression>
 SORT <column> (DESC)
