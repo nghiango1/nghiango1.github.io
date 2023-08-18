@@ -4,8 +4,8 @@ site_url: https://ylsama.github.io/ # Change this to your site URL
 
 theme:
     name: 'material'
-    logo: assets/images/favicons.png
-    favicon: assets/images/favicons.png
+    logo: assets/images/favicon.png
+    favicon: assets/images/favicon.png
     custom_dir: overrides
     font:
         text: Ubuntu
