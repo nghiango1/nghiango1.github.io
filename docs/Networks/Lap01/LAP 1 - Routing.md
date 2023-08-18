@@ -8,6 +8,11 @@ tags:
 
 Consider we having this network [[NETWORK LAP 1 - VPN route.canvas|NETWORK LAP 1 - VPN route]], route the Admin to access the Private LAN (the Router can't not access and change route table)
 
+The 192.168.1.254 gateway have 2 network card to make route traffic between 192.168.1.0/24 and  192.168.2.0/24
+
+Jump server also have two network card too. But all other Private Lan 2 client only have 192.168.1.254 as default gateway
+
+
 ![[Pasted image 20230818184045.png|Pasted image 20230818184045.png]]
 
 # Solve
@@ -15,8 +20,17 @@ Consider we having this network [[NETWORK LAP 1 - VPN route.canvas|NETWORK LAP 1
 To get to the [[LAP 1 - Answer.canvas|Answer]]
 ![[Pasted image 20230818191304.png|Pasted image 20230818191304.png]] 
 
-We mush make sure we have the packet can be route forward and backward. In this problem, we have 2 hop 
+We mush make sure we have the packet can be route forward and backward. In this problem, we have 2 new hop gateway (with 3 manual route) that need manual config.
 
+## Pre require
+
+The network card in Jump server make the routing too complex thus being remove and use 192.168.1.254 as gateway to access the Private Lan 2 client instead. 
+
+```bash
+sudo nwtui
+```
+
+Then process to deactivate and disable Lan 2 network interface on the Jump server 
 ## Hop 1: 
 
 ### Route Admin PC to Jump server 
