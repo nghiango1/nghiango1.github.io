@@ -6,6 +6,7 @@ catagory: "Program Language"
 A good language for deep understanding the machine way of handle thing, while not bloated with overcomplicated syntax
 
 List of problem that I used c to solve
+
 | File                                                                                                                                       | Last update               |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
 | [[CV/Education/ComputerScienceProblem/LeetCode/81. Search in Rotated Sorted Array II.md\|81. Search in Rotated Sorted Array II]]           | 9:35 AM - August 18, 2023 |
