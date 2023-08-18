@@ -3,6 +3,14 @@ share: true
 catagory: "Program Language"
 ---
 
+List of problem that I used rust to solve
+
+| File                                                                                         | Last update               |
+| -------------------------------------------------------------------------------------------- | ------------------------- |
+| [[CV/Education/ComputerScienceProblem/LeetCode/63. Unique Paths II.md\|63. Unique Paths II]] | 9:06 AM - August 18, 2023 |
+
+
+
 # Variable
 - Assigned using `let` keyword
 - Print to standard output by `print! ( )` or `println! ()`
