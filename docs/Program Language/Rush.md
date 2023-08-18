@@ -5,9 +5,9 @@ catagory: "Program Language"
 
 List of problem that I used rust to solve
 
-| File                                                                                         | Last update               |
-| -------------------------------------------------------------------------------------------- | ------------------------- |
-| [[CV/Education/ComputerScienceProblem/LeetCode/63. Unique Paths II.md\|63. Unique Paths II]] | 9:06 AM - August 18, 2023 |
+| Problem                 | Last update               |
+| ----------------------- | ------------------------- |
+| [[63. Unique Paths II|63. Unique Paths II]] | 9:06 AM - August 18, 2023 |
 
 
 
