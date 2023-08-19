@@ -12,6 +12,36 @@
         "url": "tags/"
     },
     {
+        "src_uri": "Networks/Lap01/LAP 1 - Routing.md",
+        "dest_uri": "Networks/Lap01/LAP%201%20-%20Routing/",
+        "name": "LAP 1 - Routing",
+        "url": "Networks/Lap01/LAP%201%20-%20Routing/"
+    },
+    {
+        "src_uri": "Program Language/C language.md",
+        "dest_uri": "Program%20Language/C%20language/",
+        "name": "C language",
+        "url": "Program%20Language/C%20language/"
+    },
+    {
+        "src_uri": "Program Language/Python.md",
+        "dest_uri": "Program%20Language/Python/",
+        "name": "Python",
+        "url": "Program%20Language/Python/"
+    },
+    {
+        "src_uri": "Program Language/Rush.md",
+        "dest_uri": "Program%20Language/Rush/",
+        "name": "Rush",
+        "url": "Program%20Language/Rush/"
+    },
+    {
+        "src_uri": "Query Language/Dataview Query Language.md",
+        "dest_uri": "Query%20Language/Dataview%20Query%20Language/",
+        "name": "Dataview Query Language",
+        "url": "Query%20Language/Dataview%20Query%20Language/"
+    },
+    {
         "src_uri": "assets/css/.push",
         "dest_uri": "assets/css/.push",
         "name": ".push",
@@ -58,6 +88,78 @@
         "dest_uri": "hidden/.pages",
         "name": ".pages",
         "url": "hidden/.pages"
+    },
+    {
+        "src_uri": "images/Pasted image 20230817214253.png",
+        "dest_uri": "images/Pasted%20image%2020230817214253.png",
+        "name": "Pasted image 20230817214253",
+        "url": "images/Pasted%20image%2020230817214253.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230817214312.png",
+        "dest_uri": "images/Pasted%20image%2020230817214312.png",
+        "name": "Pasted image 20230817214312",
+        "url": "images/Pasted%20image%2020230817214312.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230817232110.png",
+        "dest_uri": "images/Pasted%20image%2020230817232110.png",
+        "name": "Pasted image 20230817232110",
+        "url": "images/Pasted%20image%2020230817232110.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230817232142.png",
+        "dest_uri": "images/Pasted%20image%2020230817232142.png",
+        "name": "Pasted image 20230817232142",
+        "url": "images/Pasted%20image%2020230817232142.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230817235856.png",
+        "dest_uri": "images/Pasted%20image%2020230817235856.png",
+        "name": "Pasted image 20230817235856",
+        "url": "images/Pasted%20image%2020230817235856.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818093551.png",
+        "dest_uri": "images/Pasted%20image%2020230818093551.png",
+        "name": "Pasted image 20230818093551",
+        "url": "images/Pasted%20image%2020230818093551.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818184045.png",
+        "dest_uri": "images/Pasted%20image%2020230818184045.png",
+        "name": "Pasted image 20230818184045",
+        "url": "images/Pasted%20image%2020230818184045.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818185311.png",
+        "dest_uri": "images/Pasted%20image%2020230818185311.png",
+        "name": "Pasted image 20230818185311",
+        "url": "images/Pasted%20image%2020230818185311.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818191304.png",
+        "dest_uri": "images/Pasted%20image%2020230818191304.png",
+        "name": "Pasted image 20230818191304",
+        "url": "images/Pasted%20image%2020230818191304.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818192221.png",
+        "dest_uri": "images/Pasted%20image%2020230818192221.png",
+        "name": "Pasted image 20230818192221",
+        "url": "images/Pasted%20image%2020230818192221.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818212953.png",
+        "dest_uri": "images/Pasted%20image%2020230818212953.png",
+        "name": "Pasted image 20230818212953",
+        "url": "images/Pasted%20image%2020230818212953.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230818213002.png",
+        "dest_uri": "images/Pasted%20image%2020230818213002.png",
+        "name": "Pasted image 20230818213002",
+        "url": "images/Pasted%20image%2020230818213002.png"
     },
     {
         "src_uri": "notes/.pages",
@@ -426,6 +528,12 @@
         "url": "notes/Leetcode%20100-1000/530.%20Minimum%20Absolute%20Difference%20in%20BST/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/542. 01 Matrix.md",
+        "dest_uri": "notes/Leetcode%20100-1000/542.%2001%20Matrix/",
+        "name": "542. 01 Matrix",
+        "url": "notes/Leetcode%20100-1000/542.%2001%20Matrix/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/688. Knight Probability in Chessboard.md",
         "dest_uri": "notes/Leetcode%20100-1000/688.%20Knight%20Probability%20in%20Chessboard/",
         "name": "688. Knight Probability in Chessboard",
@@ -498,6 +606,12 @@
         "url": "notes/Leetcode%201000-10000/1601.%20Maximum%20Number%20of%20Achievable%20Transfer%20Requests/"
     },
     {
+        "src_uri": "notes/Leetcode 1000-10000/1615. Maximal Network Rank.md",
+        "dest_uri": "notes/Leetcode%201000-10000/1615.%20Maximal%20Network%20Rank/",
+        "name": "1615. Maximal Network Rank",
+        "url": "notes/Leetcode%201000-10000/1615.%20Maximal%20Network%20Rank/"
+    },
+    {
         "src_uri": "notes/Leetcode 1000-10000/1751. Maximum Number of Events That Can Be Attended II.md",
         "dest_uri": "notes/Leetcode%201000-10000/1751.%20Maximum%20Number%20of%20Events%20That%20Can%20Be%20Attended%20II/",
         "name": "1751. Maximum Number of Events That Can Be Attended II",
@@ -562,24 +676,6 @@
         "dest_uri": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/",
         "name": "2616. Minimize the Maximum Difference of Pairs",
         "url": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/"
-    },
-    {
-        "src_uri": "notes/Program Language/Python.md",
-        "dest_uri": "notes/Program%20Language/Python/",
-        "name": "Python",
-        "url": "notes/Program%20Language/Python/"
-    },
-    {
-        "src_uri": "notes/Program Language/Rush.md",
-        "dest_uri": "notes/Program%20Language/Rush/",
-        "name": "Rush",
-        "url": "notes/Program%20Language/Rush/"
-    },
-    {
-        "src_uri": "notes/docs/index.md",
-        "dest_uri": "notes/docs/",
-        "name": "index",
-        "url": "notes/docs/"
     },
     {
         "src_uri": "assets/images/favicon.png",
