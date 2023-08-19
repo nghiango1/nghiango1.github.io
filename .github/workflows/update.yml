@@ -8,5 +8,6 @@ jobs:
     uses: ObsidianPublisher/actions/.github/workflows/update.yml@main
     with:
       AUTO_MERGE: false
+      EXCLUDED-FILES: "overrides/hooks/on_page_markdown.py"
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
