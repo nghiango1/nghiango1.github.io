@@ -7,7 +7,7 @@ List of problem that I used rust to solve
 
 | Problem                 | Last update               |
 | ----------------------- | ------------------------- |
-| [[63. Unique Paths II|63. Unique Paths II]] | 9:06 AM - August 18, 2023 |
+| [[63. Unique Paths II|63. Unique Paths II]] | 9:26 PM - August 18, 2023 |
 
 
 
