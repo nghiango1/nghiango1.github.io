@@ -8,7 +8,7 @@ tags:
 
 Consider we having this network [[NETWORK LAP 1 - VPN route.canvas|NETWORK LAP 1 - VPN route]], route the Admin to access the Private LAN (the Router can't not access and change route table)
 
-The 192.168.1.254 gateway have 2 network card to make route traffic between 192.168.1.0/24 and  192.168.2.0/24
+The 192.168.1.254 gateway have 2 network card to make route traffic between 192.168.1.0/24 and 192.168.2.0/24
 
 Jump server also have two network card too. But all other Private Lan 2 client only have 192.168.1.254 as default gateway
 
