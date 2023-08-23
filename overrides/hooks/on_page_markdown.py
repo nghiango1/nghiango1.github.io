@@ -51,4 +51,5 @@ def on_page_markdown(markdown, files, page, config, **kwargs):
     metadata = fix_tags(page.meta)
     page.meta = metadata
     markdown = non_breaking_space(markdown)
+    markdown = re.sub(r'\((.+):: *(.+)\)', r'`\2`', markdown)
     return markdown

@@ -975,7 +975,7 @@ There are two ways to reach the bottom-right corner:</p>
 </table>
 <ul>
 <li>
-<p>(language:: java): While we can direct transfer  <code>path[0][0] = obstacleGrid[0][0] ^ 1</code> , here I try inline if<br/>
+<p><code>java</code>: While we can direct transfer  <code>path[0][0] = obstacleGrid[0][0] ^ 1</code> , here I try inline if<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">class</span> <span class="nc">Solution</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">uniquePathsWithObstacles</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">obstacleGrid</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obstacleGrid</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
@@ -998,10 +998,10 @@ There are two ways to reach the bottom-right corner:</p>
 </code></pre></div></p>
 </li>
 <li>
-<p>(language:: c): Randomly with time to complete the problem (it should always be <code>0ms</code> imo), but it quite nice to have <code>1, 0 -&gt; 0, 1</code> convert using <code>!</code> (<code>not</code> logical operand) <code>path[0][0] = !obstacleGrid[0][0];</code> Also, i don’t used <code>memset</code> to initialized <code>path = {0}</code> </p>
+<p><code>c): Randomly with time to complete the problem (it should always be</code>0ms<code>imo), but it quite nice to have</code>1, 0 -&gt; 0, 1<code>convert using</code>!<code>(</code>not<code>logical operand</code> <code>path[0][0] = !obstacleGrid[0][0];</code> Also, i don’t used <code>memset</code> to initialized <code>path = {0}</code> </p>
 </li>
 <li>
-<p>(language:: python): I just directly convert using <code>int(&lt;boolean&gt;)</code> value<br/>
+<p><code>python): I just directly convert using</code>int(<boolean>`` value<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">def</span> <span class="nf">uniquePathsWithObstacles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obstacleGrid</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">obstacleGrid</span><span class="p">)</span>
@@ -1019,10 +1019,10 @@ There are two ways to reach the bottom-right corner:</p>
 <a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a>                <span class="k">if</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
 <a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a>                    <span class="n">path</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">path</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 <a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a>        <span class="k">return</span> <span class="n">path</span><span class="p">[</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</code></pre></div></p>
+</code></pre></div></boolean></p>
 </li>
 <li>
-<p>(language:: rust): feel like java code, nothing fancy (while I do have to go back and remove some unused code in <code>java</code> solution to match <code>rust</code> version)<br/>
+<p><code>rust): feel like java code, nothing fancy (while I do have to go back and remove some unused code in</code>java<code>solution to match</code>rust<code>version</code><br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">impl</span><span class="w"> </span><span class="n">Solution</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">unique_paths_with_obstacles</span><span class="p">(</span><span class="n">obstacle_grid</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span>
 <a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obstacle_grid</span><span class="p">.</span><span class="n">len</span><span class="p">();</span>

@@ -902,7 +902,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="de-linked-list-and-make-new-one">De-linked list and make new one<a class="headerlink" href="#de-linked-list-and-make-new-one" title="Permanent link">¶</a></h3>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>Just throw away the linked list, I storing all data in a array and rebuild new one.</p>
 <ul>
 <li>Loop through <code>head</code> to construct <code>delink</code> array that have all <code>value</code> at the same position of <code>head</code> list</li>
@@ -940,7 +940,7 @@
 <a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a>        <span class="k">return</span> <span class="n">newHead</span>
 </code></pre></div>
 <h2 id="loop-on-linked-list-but-still-make-new-one">Loop on linked list but still make new one<a class="headerlink" href="#loop-on-linked-list-but-still-make-new-one" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>The previous approach only loop through the list once, not randomly accessing it, so we can just use normal loop through provided <code>head</code> linked list using a pointer <code>p</code> variable.</p>
 <p>To make it better, I using two temp Linked list to construct the result Linked list, so that I only need to loop through <code>head</code> once:</p>
 <ul>
@@ -977,7 +977,7 @@
 <a href="#__codelineno-1-28" id="__codelineno-1-28" name="__codelineno-1-28"></a>        <span class="k">return</span> <span class="n">smaller</span>
 </code></pre></div>
 <h2 id="loop-on-linked-list-and-reused-all-the-old-provided-listnode">Loop on linked list and reused all the old provided <code>ListNode</code><a class="headerlink" href="#loop-on-linked-list-and-reused-all-the-old-provided-listnode" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>Instead of create new <code>ListNode</code>, we can directly using <code>p</code> as our node<br/>
 Still, we need to store <code>p</code> by <code>temp</code> so that our change doesn’t affect the loop code<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>        <span class="k">while</span> <span class="n">p</span><span class="p">:</span>
