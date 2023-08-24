@@ -1,9 +1,7 @@
 import re
 
-
 def non_breaking_space(markdown):
-    return re.sub('[\u00A0\u1680\u180E\u2000-\u200B\u202F\u205F\u3000\uFEFF]', ' ', markdown)
-
+    return re.sub('[\u00A0\u1680\u180E\u2000-\u200B\u202F\u205F\u3000\uFEFF]', '&emsp;', markdown)
 
 def update_heading(markdown):
     file_content = markdown.split('\n')
@@ -13,14 +11,13 @@ def update_heading(markdown):
         if not code:
             if line.startswith('```'):
                 code = True
-            elif line.startswith('#') and line.count('#') <= 5:
+            elif line.startswith('#') and line.count('#')<=5:
                 heading_number = line.count('#') + 1
                 line = '#' * heading_number + ' ' + line.replace('#', '')
         elif line.startswith('```') and code:
             code = True
         markdown += line + '\n'
     return markdown
-
 
 def strip_comments(markdown):
     file_content = markdown.split('\n')
@@ -31,7 +28,6 @@ def strip_comments(markdown):
     markdown = re.sub(r'%%(.*)%%', '', markdown, flags=re.DOTALL)
     return markdown
 
-
 def fix_tags(metadata):
     tags = metadata.get('tags', None) or metadata.get('tag', None)
     if tags and isinstance(tags, str):
@@ -40,10 +36,8 @@ def fix_tags(metadata):
         metadata['tags'] = tags
     return metadata
 
-
 def on_page_markdown(markdown, files, page, config, **kwargs):
-    config_hooks = config['extra'].get(
-        'hooks', {'strip_comments': True, 'fix_heading': False})
+    config_hooks = config['extra'].get('hooks', {'strip_comments': True, 'fix_heading': False})
     if config_hooks['strip_comments']:
         markdown = strip_comments(markdown)
     if config_hooks['fix_heading']:
@@ -51,5 +45,4 @@ def on_page_markdown(markdown, files, page, config, **kwargs):
     metadata = fix_tags(page.meta)
     page.meta = metadata
     markdown = non_breaking_space(markdown)
-    markdown = re.sub(r'\((.+):: *(.+)\)', r'`\2`', markdown)
     return markdown
