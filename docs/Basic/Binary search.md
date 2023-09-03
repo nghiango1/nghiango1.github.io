@@ -51,7 +51,7 @@ This result on a [[Big O Time Complexity|O(log n)]] time complexity
 ## Actual Implement
 
 ### Personal preference
-(time:: O(log n))
+(language:: python) (time:: O(log n))
 
 There is something call [[Off by one error|Off by one error]] causing a lot of debug time, so my general take on binary search is always:
 
@@ -96,9 +96,40 @@ print(isFound, lastPossition)
 
 ### Example:
 
-| Problem                                   | Last update               |
-| ----------------------------------------- | ------------------------- |
-| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]] | 9:35 AM - August 18, 2023 |
-| [[274. H-Index|274. H-Index]]                          | 9:49 AM - August 18, 2023 |
-| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                | 8:38 PM - August 28, 2023 |
-| [[84. Largest Rectangle in Histogram|84. Largest Rectangle in Histogram]]    | 9:30 AM - August 18, 2023 |
+| Problem                                   | Last update                |
+| ----------------------------------------- | -------------------------- |
+| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]] | 12:10 AM - August 30, 2023 |
+| [[274. H-Index|274. H-Index]]                          | 9:49 AM - August 18, 2023  |
+| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                | 12:05 AM - August 30, 2023 |
+| [[84. Largest Rectangle in Histogram|84. Largest Rectangle in Histogram]]    | 12:12 AM - August 30, 2023 |
+
+
+## Typescript implementation
+(language:: typescript) (time:: O(log n))
+
+Not thing fancy, just pain 
+- For divining, JavaScript force us to use `(float)` division result, we have to use `Math.floor()` (do not use `Math.trunc()`)
+- The implement just focus on finding the value, so it return on found value immediately 
+
+```ts
+export default function bs_list(haystack: number[], needle: number): boolean {
+    let l = -1;
+    let r = haystack.length;
+    let m = 0;
+
+    while (true) {
+        m = Math.floor((l + r) / 2);
+        if (haystack[m] == needle)
+            return true;
+        if (l == m)
+            break;
+        if (haystack[m] < needle) {
+            l = m;
+        } else {
+            r = m;
+        }
+    }
+
+    return false
+}
+```
