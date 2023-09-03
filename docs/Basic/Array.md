@@ -15,8 +15,25 @@ Array is a continue space of memory
 
 Memory it self is a problem, every language do different thing to allocating memory, which affecting how array work under the hood.
 
-By focusing on C language, we can have a deeper talk of array concept
-## 2.1. C language array and memory allocation
+- **Get**: Which usually come with a offset, which the computer will jump to array stored memory, take into the element size of that array, multiple it with `offset`. Then load it to the CPU.
+    ```asm
+    load <arr> + <offset> * <size>
+    ```
+- **Set**: We accessing the memory need to change and modify it data
+    ```asm
+    set <arr> + <offset> * <size>, <value>
+    ```
+
+By using the randomize accessing memory, knowing exact where we want to access, and how much size we want to get. By leverage our Hardware (RAM, L Cache), this can count as (time:: O(1)) 
+
+
+# 3. Array reference
+
+> By focusing on a specific language, we can have a deeper talk of array concept:
+
+## 3.1. C language array and memory allocation
+
+### 3.1.1. LAP 1 - Array in C
 
 This being compile with this flag (using vim config and vim make)
 
@@ -91,6 +108,8 @@ int main(){
 }
 ```
 
+The above program it self, return this:
+
 ```stdout
 size of arr = 32
 size of arr element = 8
@@ -121,9 +140,9 @@ Array with 8 length:
 00000002, 00000000, 00000002, 00000000, 00000002, 00000000, 00000002, 00000000
 ```
 
-## 2.2. What happening here?
+### 3.1.2. Explaination - What happening here?
 
-### 2.2.1. Created an array variable:
+#### 3.1.2.1. Created an array variable:
 
 ```c
 char hello[13] = "Hello world!";
@@ -135,7 +154,7 @@ int arr_2[8] = {4, 4, 4, 4, 4, 4, 4, 4};
 - `arr` is an array of `long long` (8 bytes number) type, that all element initiation with 1;
 - `arr_2` is an array of `int` (4 bytes number) type, that all element initiation with 4;
 
-### 2.2.2. Helper function that printout the exact value (in hex) of a memory
+#### 3.1.2.2. Helper function that printout the exact value (in hex) of a memory
 
 ```c
 int printHex(unsigned int* arr, int length){
@@ -150,7 +169,7 @@ int printHex(unsigned int* arr, int length){
 }
 ```
 
-### 2.2.3. Check the memory of array `arr`:
+#### 3.1.2.3. Check the memory of array `arr`:
 
 Which mean how much byte size we used to allocating `arr`, we doing it by calling `sizeof()` std function.
 
@@ -190,7 +209,7 @@ As each element is represented by 8 bytes, which mean, a element in array `arr`,
 
 > The number not actually representing as `00000...0001`,  this meaning we having a little-endian architecture, where the byte order is reverse. But we're not covering this yet, there a lot to know to even understanding this type of problem (We have 32 bit computer memory here).
 
-### 2.2.4. A different view/accessing way to the memory of array `arr`:
+#### 3.1.2.4. A different view/accessing way to the memory of array `arr`:
 
 I create a new view for `arr` (via [[pass around variable|C pointer]] ):
 
@@ -221,7 +240,7 @@ Array with 8 length:
 New value of arr[0] = -4294967295
 ```
 
-### 2.2.5. String/Char array
+#### 3.1.2.5. String/Char array
 
 String/Char array look suck when we care about memory. C use ACSII for character representation, but by creating variable differently we can land the string in a totally different memory.
 
@@ -283,7 +302,7 @@ Array with 40 length:
     Array with 40 length:
     6c6c6548, 6f77206f, 21646c72, 00000000, 00000000, 00000000, 00000000, 00000000, 00000001, ffffffff, 00000001, 00000000, 00000001, 00000000, 00000001, 00000000, 00000004, 00000004, 00000004, 00000004, 00000004, 00000004, 00000004, 00000004, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
     ```
-### 2.2.6. Overflow the stack
+#### 3.1.2.6. Overflow the stack
 
 ```c
     // The continue of the stack alocation
@@ -306,3 +325,92 @@ Array with 8 length:
 ```
 
 C handle memory next to each other. While `arr[x]` will literally just a offset accessing memory over a starting point. So we can accessing other variable memory and modify it (even a memory/assembly instruction of the program can be access - but modify is prevent by specify writeable memory of runtime executable). 
+## 3.2. Javascript
+
+We can create a new buffer array using `new ArrayBuffer()`. Which it self can be feed into `new Uint8Array()`, `new Uint16Array()`, `new Uint32Array()`, `Uint8ClampedArray()`constructor to create direct view of that memory.
+
+```node
+> a = new ArrayBuffer(16)
+ArrayBuffer {
+  [Uint8Contents]: <00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+  byteLength: 16
+}
+> b = new Uint8Array(a)
+Uint8Array(16) [
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0
+]
+> c = new Uint16Array(a)
+Uint16Array(8) [
+  0, 0, 0, 0,
+  0, 0, 0, 0
+]
+> d = new Uint32Array(a)
+Uint32Array(4) [ 0, 0, 0, 0 ]
+> e = new Uint8ClampedArray(a)
+Uint8ClampedArray(16) [
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0
+]
+```
+
+By assigning any of them, we directly change the memory that allocated to a
+
+```node
+> d[0] = 4
+4
+> d
+Uint32Array(4) [ 4, 0, 0, 0 ]
+> a
+ArrayBuffer {
+  [Uint8Contents]: <04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+  byteLength: 16
+}
+```
+
+```node
+> b[2] = ~b[2]
+-1
+> a
+ArrayBuffer {
+  [Uint8Contents]: <04 00 ff 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+  byteLength: 16
+}
+```
+
+Because all a, b, c, d, e point to the same memory, we also changing all of them as once. Resulting the number appearance update when querying them back:
+
+```node
+> a
+ArrayBuffer {
+  [Uint8Contents]: <04 00 ff 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+  byteLength: 16
+}
+> b
+Uint8Array(16) [
+  4, 0, 255, 0, 0, 0,
+  0, 0,   0, 0, 0, 0,
+  0, 0,   0, 0
+]
+> c
+Uint16Array(8) [
+  4, 255, 0, 0,
+  0,   0, 0, 0
+]
+> d
+Uint32Array(4) [ 16711684, 0, 0, 0 ]
+> e
+Uint8ClampedArray(16) [
+  4, 0, 255, 0, 0, 0,
+  0, 0,   0, 0, 0, 0,
+  0, 0,   0, 0
+]
+```
+
+We can see that, `d[0] = 16711684` (32 bit array) is the result of true decimal value hold by `"04 00 ff 00"`.
+
+The following number `[0]` is there to tell us the offset, that how we want the computer to access the memory, by increasing it, the computer jump over 32 bit each.
+
+While `b[2]` (8 bit array) is pointing to the start memory + an offset of `8 * 2 bit`. This type of traversal do cost time, base on RAM, but still can be count as instant for the most of case.
