@@ -1,9 +1,8 @@
 ---
-title: Binary search
 share: true
-catagory: "Basic"
+catagory: Basic
 tags:
-    - computer_sience
+  - computer_sience
 ---
 
 # 1. Problem
