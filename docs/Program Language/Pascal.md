@@ -29,7 +29,7 @@ When I talk about **Algorithms and data structures**, I mean this much as we can
 1. Algorithms features: 
     - Time/Calculation complexity:  Big O, theoretically measuring algorithms base on an approximately formula `f` base on the size of input (calling `n`), or `f(n) <= c*g(n) or O(g(n)) (c is a constanst)`
 1. Hand on data structure:
-    - List: A structure contain set of indexed element with the same type, with basic operation: Find, Insert, Delete.
+    - [[List|List]]: A structure contain set of indexed element with the same type, with basic operation: Find, Insert, Delete.
         - Array list
         - Linked list
         - Double linked list
