@@ -414,3 +414,85 @@ We can see that, `d[0] = 16711684` (32 bit array) is the result of true decimal 
 The following number `[0]` is there to tell us the offset, that how we want the computer to access the memory, by increasing it, the computer jump over 32 bit each.
 
 While `b[2]` (8 bit array) is pointing to the start memory + an offset of `8 * 2 bit`. This type of traversal do cost time, base on RAM, but still can be count as instant for the most of case.
+
+## Python array
+
+Not this:
+
+```
+a = [1,2,3]
+```
+
+This is a [[List|List]], a data structure that could be implement using array (it is implement using array, after I look at python source code)
+
+```python
+→ python
+Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = [1,2,3]
+>>> help(a)
+
+Help on list object:
+
+class list(object)
+ |  list(iterable=(), /)
+ |
+ |  Built-in mutable sequence.
+ |
+ |  If no argument is given, the constructor creates a new empty list.
+ |  The argument must be an iterable if specified.
+ |
+ |  Methods defined here:
+ |
+ |  __add__(self, value, /)
+ |      Return self+value.
+```
+
+There is a array object, you can use by importing from array module :
+
+```python
+import array from array
+
+a = array('l') # signed integer 4 bytes array
+help(a)
+```
+
+Output:
+```python
+class array(builtins.object)
+ |  array(typecode [, initializer]) -> array
+ |
+ |  Return a new array whose items are restricted by typecode, and
+ |  initialized from the optional initializer value, which must be a list,
+ |  string or iterable over elements of the appropriate type.
+ |
+ |  Arrays represent basic values and behave very much like lists, except
+ |  the type of objects stored in them is constrained. The type is specified
+ |  at object creation time by using a type code, which is a single character.
+ |  The following type codes are defined:
+ |
+ |      Type code   C Type             Minimum size in bytes
+ |      'b'         signed integer     1
+ |      'B'         unsigned integer   1
+ |      'u'         Unicode character  2 (see note)
+ |      'h'         signed integer     2
+ |      'H'         unsigned integer   2
+ |      'i'         signed integer     2
+ |      'I'         unsigned integer   2
+ |      'l'         signed integer     4
+ |      'L'         unsigned integer   4
+ |      'q'         signed integer     8 (see note)
+ |      'Q'         unsigned integer   8 (see note)
+ |      'f'         floating point     4
+ |      'd'         floating point     8
+```
+
+Still, it just a [[List|List]], with extra type config, with a way to define type using a hidden Type code for no reason, why?
+
+```c
+static PyObject *ins(arrayobject *self, Py_ssize_t where, PyObject *v) {
+  if (ins1(self, where, v) != 0)
+    return NULL;
+  Py_RETURN_NONE;
+}
+```
