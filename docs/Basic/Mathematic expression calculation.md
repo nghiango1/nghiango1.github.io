@@ -522,26 +522,6 @@ begin
     dispose(temp);
 end;
 
-procedure stackTraversal(stack: stacktype);
-var
-    temp : ^node;
-begin
-    writeln('Stack length: ', stack.length, ' element');
-    temp := stack.top;
-    write('Stack state: ');
-    while temp <> nil do begin
-        write(temp^.value, ', ');
-        temp := temp^.next;
-    end;
-    writeln('nil');
-end;
-
-//function top(stack: stacktype) : integer;
-//begin
-//    top := stack.top^.value;
-//end;
-
-// Check on String handling. trim.pas
 procedure trimSpaceRight(var s: string);
 begin
     while (length(s) > 0) and (s[length(s)] = ' ') do begin
@@ -612,8 +592,8 @@ begin
     end;
 end;
 
-procedure inputHandling(var stack : stacktype);
 var
+    stack : stacktype;
     s : string;
     current : string;
     i : integer;
@@ -629,9 +609,10 @@ begin
     end;
 
     trimMoreThan1Space(s);
-
     writeln(s);
 
+    stack.top := nil;
+    stack.length := 0;
 
     current := '';
     for i := 1 to length(s) do begin
@@ -644,23 +625,36 @@ begin
     end;
     if current <> '' then
         processingCurrentString(current, stack);
-end;
-
-var
-    s : stacktype;
-begin
-    // input to stack
-    s.top := nil;
-    s.length := 0;
-    inputHandling(s);
-    stackTraversal(s);
-    while s.top <> nil do begin
-        writeln('Pop: ', pop(s));
+    while stack.top <> nil do begin
+        writeln('Pop: ', pop(stack));
     end;
-    if s.top <> nil then dispose(s.top);
 end.
 ```
 
+Input:
+```stdin
+1 2 + 3 4 -*
+```
+
+Output:
+```stdout
+1 2 + 3 4 - *
+Processing current = 1
+Found: 1
+Processing current = 2
+Found: 2
+Processing current = +
+Found valid operation, do: 1 + 2 
+Processing current = 3
+Found: 3
+Processing current = 4
+Found: 4
+Processing current = -
+Found valid operation, do: 3 - 4 
+Processing current = *
+Found valid operation, do: 3 * -1
+Pop: -3
+```
 ### Infix to Postfix
 
 A processing data middle step, as our input are in Infix format.
@@ -1093,7 +1087,8 @@ begin
     // adding space between operation and number
     for i:= length(s) downto 2 do begin
         writeln(s[i]);
-        if (s[i] <> ' ') and ((s[i] in operation) or (s[i-1] in operation)) then begin
+        if (s[i] <> ' ') and ((s[i] in operation) or (s[i-1] in operation)) then 
+        begin
             insert(' ', s, i);
         end;
     end;
