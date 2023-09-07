@@ -12,6 +12,66 @@
         "url": "tags/"
     },
     {
+        "src_uri": "Basic/Array.md",
+        "dest_uri": "Basic/Array/",
+        "name": "Array",
+        "url": "Basic/Array/"
+    },
+    {
+        "src_uri": "Basic/Big O Time Complexity.md",
+        "dest_uri": "Basic/Big%20O%20Time%20Complexity/",
+        "name": "Big O Time Complexity",
+        "url": "Basic/Big%20O%20Time%20Complexity/"
+    },
+    {
+        "src_uri": "Basic/Binary search.md",
+        "dest_uri": "Basic/Binary%20search/",
+        "name": "Binary search",
+        "url": "Basic/Binary%20search/"
+    },
+    {
+        "src_uri": "Basic/Bubble sort.md",
+        "dest_uri": "Basic/Bubble%20sort/",
+        "name": "Bubble sort",
+        "url": "Basic/Bubble%20sort/"
+    },
+    {
+        "src_uri": "Basic/Linear search.md",
+        "dest_uri": "Basic/Linear%20search/",
+        "name": "Linear search",
+        "url": "Basic/Linear%20search/"
+    },
+    {
+        "src_uri": "Basic/Linked List.md",
+        "dest_uri": "Basic/Linked%20List/",
+        "name": "Linked List",
+        "url": "Basic/Linked%20List/"
+    },
+    {
+        "src_uri": "Basic/List.md",
+        "dest_uri": "Basic/List/",
+        "name": "List",
+        "url": "Basic/List/"
+    },
+    {
+        "src_uri": "Basic/Mathematic expression calculation.md",
+        "dest_uri": "Basic/Mathematic%20expression%20calculation/",
+        "name": "Mathematic expression calculation",
+        "url": "Basic/Mathematic%20expression%20calculation/"
+    },
+    {
+        "src_uri": "Basic/Quick sort.md",
+        "dest_uri": "Basic/Quick%20sort/",
+        "name": "Quick sort",
+        "url": "Basic/Quick%20sort/"
+    },
+    {
+        "src_uri": "Basic/Two Crystal Ball.md",
+        "dest_uri": "Basic/Two%20Crystal%20Ball/",
+        "name": "Two Crystal Ball",
+        "url": "Basic/Two%20Crystal%20Ball/"
+    },
+    {
         "src_uri": "Networks/Lap01/LAP 1 - Routing.md",
         "dest_uri": "Networks/Lap01/LAP%201%20-%20Routing/",
         "name": "LAP 1 - Routing",
@@ -22,6 +82,12 @@
         "dest_uri": "Program%20Language/C%20language/",
         "name": "C language",
         "url": "Program%20Language/C%20language/"
+    },
+    {
+        "src_uri": "Program Language/Pascal.md",
+        "dest_uri": "Program%20Language/Pascal/",
+        "name": "Pascal",
+        "url": "Program%20Language/Pascal/"
     },
     {
         "src_uri": "Program Language/Python.md",
@@ -162,6 +228,66 @@
         "url": "images/Pasted%20image%2020230818213002.png"
     },
     {
+        "src_uri": "images/Pasted image 20230819104144.png",
+        "dest_uri": "images/Pasted%20image%2020230819104144.png",
+        "name": "Pasted image 20230819104144",
+        "url": "images/Pasted%20image%2020230819104144.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230826074935.png",
+        "dest_uri": "images/Pasted%20image%2020230826074935.png",
+        "name": "Pasted image 20230826074935",
+        "url": "images/Pasted%20image%2020230826074935.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230830145430.png",
+        "dest_uri": "images/Pasted%20image%2020230830145430.png",
+        "name": "Pasted image 20230830145430",
+        "url": "images/Pasted%20image%2020230830145430.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230831000545.png",
+        "dest_uri": "images/Pasted%20image%2020230831000545.png",
+        "name": "Pasted image 20230831000545",
+        "url": "images/Pasted%20image%2020230831000545.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230831091225.png",
+        "dest_uri": "images/Pasted%20image%2020230831091225.png",
+        "name": "Pasted image 20230831091225",
+        "url": "images/Pasted%20image%2020230831091225.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230831175800.png",
+        "dest_uri": "images/Pasted%20image%2020230831175800.png",
+        "name": "Pasted image 20230831175800",
+        "url": "images/Pasted%20image%2020230831175800.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230831180047.png",
+        "dest_uri": "images/Pasted%20image%2020230831180047.png",
+        "name": "Pasted image 20230831180047",
+        "url": "images/Pasted%20image%2020230831180047.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230902095115.png",
+        "dest_uri": "images/Pasted%20image%2020230902095115.png",
+        "name": "Pasted image 20230902095115",
+        "url": "images/Pasted%20image%2020230902095115.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230903112525.png",
+        "dest_uri": "images/Pasted%20image%2020230903112525.png",
+        "name": "Pasted image 20230903112525",
+        "url": "images/Pasted%20image%2020230903112525.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230907081804.png",
+        "dest_uri": "images/Pasted%20image%2020230907081804.png",
+        "name": "Pasted image 20230907081804",
+        "url": "images/Pasted%20image%2020230907081804.png"
+    },
+    {
         "src_uri": "notes/.pages",
         "dest_uri": "notes/.pages",
         "name": ".pages",
@@ -196,6 +322,12 @@
         "dest_uri": "notes/Leetcode%2010-100/55.%20Jump%20Game/",
         "name": "55. Jump Game",
         "url": "notes/Leetcode%2010-100/55.%20Jump%20Game/"
+    },
+    {
+        "src_uri": "notes/Leetcode 10-100/62. Unique Paths.md",
+        "dest_uri": "notes/Leetcode%2010-100/62.%20Unique%20Paths/",
+        "name": "62. Unique Paths",
+        "url": "notes/Leetcode%2010-100/62.%20Unique%20Paths/"
     },
     {
         "src_uri": "notes/Leetcode 10-100/63. Unique Paths II.md",
@@ -250,6 +382,12 @@
         "dest_uri": "notes/Leetcode%2010-100/91.%20Decode%20Ways/",
         "name": "91. Decode Ways",
         "url": "notes/Leetcode%2010-100/91.%20Decode%20Ways/"
+    },
+    {
+        "src_uri": "notes/Leetcode 10-100/92. Reverse Linked List II.md",
+        "dest_uri": "notes/Leetcode%2010-100/92.%20Reverse%20Linked%20List%20II/",
+        "name": "92. Reverse Linked List II",
+        "url": "notes/Leetcode%2010-100/92.%20Reverse%20Linked%20List%20II/"
     },
     {
         "src_uri": "notes/Leetcode 10-100/94. Binary Tree Inorder Traversal.md",
@@ -354,6 +492,12 @@
         "url": "notes/Leetcode%20100-1000/136.%20Single%20Number/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/138. Copy List with Random Pointer.md",
+        "dest_uri": "notes/Leetcode%20100-1000/138.%20Copy%20List%20with%20Random%20Pointer/",
+        "name": "138. Copy List with Random Pointer",
+        "url": "notes/Leetcode%20100-1000/138.%20Copy%20List%20with%20Random%20Pointer/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/139. Word Break.md",
         "dest_uri": "notes/Leetcode%20100-1000/139.%20Word%20Break/",
         "name": "139. Word Break",
@@ -370,6 +514,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/146.%20LRU%20Cache/",
         "name": "146. LRU Cache",
         "url": "notes/Leetcode%20100-1000/146.%20LRU%20Cache/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/168. Excel Sheet Column Title.md",
+        "dest_uri": "notes/Leetcode%20100-1000/168.%20Excel%20Sheet%20Column%20Title/",
+        "name": "168. Excel Sheet Column Title",
+        "url": "notes/Leetcode%20100-1000/168.%20Excel%20Sheet%20Column%20Title/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/169. Majority Element.md",
@@ -414,6 +564,12 @@
         "url": "notes/Leetcode%20100-1000/207.%20Course%20Schedule/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/212. Word Search II.md",
+        "dest_uri": "notes/Leetcode%20100-1000/212.%20Word%20Search%20II/",
+        "name": "212. Word Search II",
+        "url": "notes/Leetcode%20100-1000/212.%20Word%20Search%20II/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/215. Kth Largest Element in an Array.md",
         "dest_uri": "notes/Leetcode%20100-1000/215.%20Kth%20Largest%20Element%20in%20an%20Array/",
         "name": "215. Kth Largest Element in an Array",
@@ -424,6 +580,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/217.%20Contains%20Duplicate/",
         "name": "217. Contains Duplicate",
         "url": "notes/Leetcode%20100-1000/217.%20Contains%20Duplicate/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/225. Implement Stack using Queues.md",
+        "dest_uri": "notes/Leetcode%20100-1000/225.%20Implement%20Stack%20using%20Queues/",
+        "name": "225. Implement Stack using Queues",
+        "url": "notes/Leetcode%20100-1000/225.%20Implement%20Stack%20using%20Queues/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/234. Palindrome Linked List.md",
@@ -466,6 +628,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/326.%20Power%20of%20Three/",
         "name": "326. Power of Three",
         "url": "notes/Leetcode%20100-1000/326.%20Power%20of%20Three/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/338. Counting Bits.md",
+        "dest_uri": "notes/Leetcode%20100-1000/338.%20Counting%20Bits/",
+        "name": "338. Counting Bits",
+        "url": "notes/Leetcode%20100-1000/338.%20Counting%20Bits/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/344. Reverse String.md",
@@ -516,6 +684,12 @@
         "url": "notes/Leetcode%20100-1000/445.%20Add%20Two%20Numbers%20II/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/459. Repeated Substring Pattern.md",
+        "dest_uri": "notes/Leetcode%20100-1000/459.%20Repeated%20Substring%20Pattern/",
+        "name": "459. Repeated Substring Pattern",
+        "url": "notes/Leetcode%20100-1000/459.%20Repeated%20Substring%20Pattern/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/518. Coin Change II.md",
         "dest_uri": "notes/Leetcode%20100-1000/518.%20Coin%20Change%20II/",
         "name": "518. Coin Change II",
@@ -558,6 +732,12 @@
         "url": "notes/Leetcode%20100-1000/735.%20Asteroid%20Collision/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/767. Reorganize String.md",
+        "dest_uri": "notes/Leetcode%20100-1000/767.%20Reorganize%20String/",
+        "name": "767. Reorganize String",
+        "url": "notes/Leetcode%20100-1000/767.%20Reorganize%20String/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/802. Find Eventual Safe States.md",
         "dest_uri": "notes/Leetcode%20100-1000/802.%20Find%20Eventual%20Safe%20States/",
         "name": "802. Find Eventual Safe States",
@@ -592,6 +772,12 @@
         "dest_uri": "notes/Leetcode%201000-10000/1143.%20Longest%20Common%20Subsequence/",
         "name": "1143. Longest Common Subsequence",
         "url": "notes/Leetcode%201000-10000/1143.%20Longest%20Common%20Subsequence/"
+    },
+    {
+        "src_uri": "notes/Leetcode 1000-10000/1326. Minimum Number of Taps to Open to Water a Garden.md",
+        "dest_uri": "notes/Leetcode%201000-10000/1326.%20Minimum%20Number%20of%20Taps%20to%20Open%20to%20Water%20a%20Garden/",
+        "name": "1326. Minimum Number of Taps to Open to Water a Garden",
+        "url": "notes/Leetcode%201000-10000/1326.%20Minimum%20Number%20of%20Taps%20to%20Open%20to%20Water%20a%20Garden/"
     },
     {
         "src_uri": "notes/Leetcode 1000-10000/1569. Number of Ways to Reorder Array to Get Same BST.md",
@@ -654,6 +840,12 @@
         "url": "notes/Leetcode%201000-10000/2352.%20Equal%20Row%20and%20Column%20Pairs%20-%20solve/"
     },
     {
+        "src_uri": "notes/Leetcode 1000-10000/2366. Minimum Replacements to Sort the Array.md",
+        "dest_uri": "notes/Leetcode%201000-10000/2366.%20Minimum%20Replacements%20to%20Sort%20the%20Array/",
+        "name": "2366. Minimum Replacements to Sort the Array",
+        "url": "notes/Leetcode%201000-10000/2366.%20Minimum%20Replacements%20to%20Sort%20the%20Array/"
+    },
+    {
         "src_uri": "notes/Leetcode 1000-10000/2369. Check if There is a Valid Partition For The Array.md",
         "dest_uri": "notes/Leetcode%201000-10000/2369.%20Check%20if%20There%20is%20a%20Valid%20Partition%20For%20The%20Array/",
         "name": "2369. Check if There is a Valid Partition For The Array",
@@ -676,6 +868,24 @@
         "dest_uri": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/",
         "name": "2616. Minimize the Maximum Difference of Pairs",
         "url": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/"
+    },
+    {
+        "src_uri": "template/168. Excel Sheet Column Title.md",
+        "dest_uri": "template/168.%20Excel%20Sheet%20Column%20Title/",
+        "name": "168. Excel Sheet Column Title",
+        "url": "template/168.%20Excel%20Sheet%20Column%20Title/"
+    },
+    {
+        "src_uri": "template/459. Repeated Substring Pattern.md",
+        "dest_uri": "template/459.%20Repeated%20Substring%20Pattern/",
+        "name": "459. Repeated Substring Pattern",
+        "url": "template/459.%20Repeated%20Substring%20Pattern/"
+    },
+    {
+        "src_uri": "template/767. Reorganize String.md",
+        "dest_uri": "template/767.%20Reorganize%20String/",
+        "name": "767. Reorganize String",
+        "url": "template/767.%20Reorganize%20String/"
     },
     {
         "src_uri": "assets/images/favicon.png",
