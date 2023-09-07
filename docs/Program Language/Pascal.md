@@ -20,18 +20,18 @@ Most of my learning programming concepts and programming practices is between ti
 
 Overcomplicate: Any Importing, Standard Library, Graphical User interface, Source File splitting, OS argument input etc.. is not needed for this type of educational purpose.
 
-When I talk about **Algorithms and data structures**, I mean this much as we can't cover everything:
+When I talk about **Algorithms and data structures**, I mean this much (as we can't just learn everything, this all being cover in _"Giải thuật và lập trình" by Le Minh Hoang_ ):
 
 1. Brute force:
     - Generation process: Permutation, Combination
-    - Backtracking (and Recursion): 
+    - Backtracking (using Recursion)
     - Branch and Bound (Nhánh và Cận): Traveling sale man problem
 1. Algorithms features: 
     - Time/Calculation complexity:  Big O, theoretically measuring algorithms base on an approximately formula `f` base on the size of input (calling `n`), or `f(n) <= c*g(n) or O(g(n)) (c is a constanst)`
 1. Hand on data structure:
     - [[List|List]]: A structure contain set of indexed element with the same type, with basic operation: Find, Insert, Delete.
-        - Array list
-        - Linked list
+        - [[List#Array List|Array list]]
+        - [[List#Linked list|Linked list]]
         - Double linked list
         - Connected Linked list: End connected with Head
         - Connected Double linked list:
@@ -39,9 +39,9 @@ When I talk about **Algorithms and data structures**, I mean this much as we can
         - Linked list Queue
         - Cycler Linked list Queue: No, we not learn this.
         - Array Queue (Buffer Ring)
-    - Stack: A list that only insert at the end (top) element  and delete at the end (top) element  (LIFO - Last in first out)
-        - Linked list stack
-        - Array Stack
+    - Stack: A list that only insert at the end (top) element and delete at the end (top) element  (LIFO - Last in first out)
+        - [[Mathematic expression calculation#Linked stack|Linked list stack]]
+        - [[Mathematic expression calculation#Array stack|Array Stack]]
     - Tree: Root, Subtree, Branch/Leaf, Deep. 
         - Binary tree:
             - Array Binary tree: I'm lazy, and this is fair enough, good old `2*x + 1, 2*x` child
@@ -76,23 +76,23 @@ When I talk about **Algorithms and data structures**, I mean this much as we can
     - Infix to Postfix transfer
     - Sort
         - Selection sort
-        - Bubble sort
+        - [[Bubble sort|Bubble sort]]
         - Insertion sort: Assuming we have a sorted array with 0 length, we adding the number one by one to it while maintaining the array sorted. 
         - Shell sort: never use this
-        - Quick sort: All in this one
+        - [[Quick sort|Quick sort]]: All in this one
         - Heap sort: You not even sort, just create a heap.
         - Distribution counting (I call it Count sort)
-        - Radix sort: never use this, but should be the best here.
+        - [[Radix sort|Radix sort]]: never use this, but should be the best here.
         - Merge sort: almost never use this
     - Search
-        - Sequential Search (Linear Search)
-        - Binary Search
+        - Sequential Search (or [[Linear search|Linear search]])
+        - [[Binary Search|Binary Search]]
         - Binary Search tree
-        - Hash
+        - [[Hash functions|Hash]]
         - Binary value search: Assuming input data as a binary sequence (don't care about representation of the data: String/Number/Floating point/ etc.)  
-            - Digital search tree: Trie tree for binary but search value in both branch and leaf
-            - Radix search tree: A full/trim Trie tree for binary, search value in leaf only.
-    - Dynamic programing:
+            - [[Digital search tree|Digital search tree]]: I can't understand this at all. Why the implementation have to be that confuse and unnatural.
+            - Radix search tree: A full/trim Trie tree for binary, where the value is build up by the search path (or leaf contained value) so there is no need to comparing on every step like DST.
+    - Dynamic programing
         - Recursive formulation implementation
             - Bottom - up approach: This work when we know exactly what needed to calculate before hand and build up to final result.
             - Recursion approach:  This is a more general approach when we can't analyzing what needed to calculate first:
