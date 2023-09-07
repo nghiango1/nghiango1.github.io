@@ -8,49 +8,49 @@ catagory: "docs"
 Welcome to homepage. Latest problem
 # Latest problem
 
-| Problem                               | Last update               |
-| ------------------------------------- | ------------------------- |
-| [[212. Word Search II|212. Word Search II]]               | 7:44 PM - August 26, 2023 |
-| [[646. Maximum Length of Pair Chain|646. Maximum Length of Pair Chain]] | 7:47 PM - August 26, 2023 |
-| [[97. Interleaving String|97. Interleaving String]]           | 7:44 PM - August 26, 2023 |
-| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]]   | 7:44 PM - August 26, 2023 |
-| [[767. Reorganize String|767. Reorganize String]]            | 7:44 PM - August 26, 2023 |
+| Problem                                                    | Last update                   |
+| ---------------------------------------------------------- | ----------------------------- |
+| [[92. Reverse Linked List II|92. Reverse Linked List II]]                             | 9:12 AM - September 07, 2023  |
+| [[138. Copy List with Random Pointer|138. Copy List with Random Pointer]]                     | 10:36 AM - September 05, 2023 |
+| [[62. Unique Paths|62. Unique Paths]]                                       | 11:32 AM - September 03, 2023 |
+| [[338. Counting Bits|338. Counting Bits]]                                     | 11:40 AM - September 03, 2023 |
+| [[1326. Minimum Number of Taps to Open to Water a Garden|1326. Minimum Number of Taps to Open to Water a Garden]] | 11:40 AM - September 03, 2023 |
 
 
 # Separated by language
 ## C
-| Problem                                        | Last update               |
-| ---------------------------------------------- | ------------------------- |
-| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                     | 8:38 PM - August 28, 2023 |
-| [[63. Unique Paths II|63. Unique Paths II]]                        | 7:46 PM - August 26, 2023 |
-| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]]      | 9:35 AM - August 18, 2023 |
-| [[50. Pow(x, n)|50. Pow(x, n)]]                              | 7:32 AM - August 18, 2023 |
-| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 7:31 AM - August 18, 2023 |
+| Problem                                        | Last update                |
+| ---------------------------------------------- | -------------------------- |
+| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]]      | 12:10 AM - August 30, 2023 |
+| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 12:07 AM - August 30, 2023 |
+| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                     | 12:05 AM - August 30, 2023 |
+| [[63. Unique Paths II|63. Unique Paths II]]                        | 12:04 AM - August 30, 2023 |
+| [[50. Pow(x, n)|50. Pow(x, n)]]                              | 12:01 AM - August 30, 2023 |
 
 
 ## Python
-| Problem                                     | Last update               |
-| ------------------------------------------- | ------------------------- |
-| [[212. Word Search II|212. Word Search II]]                     | 7:44 PM - August 26, 2023 |
-| [[168. Excel Sheet Column Title|168. Excel Sheet Column Title]]           | 6:47 PM - August 23, 2023 |
-| [[1615. Maximal Network Rank|1615. Maximal Network Rank]]              | 3:25 PM - August 22, 2023 |
-| [[130. Surrounded Regions|130. Surrounded Regions]]                 | 3:06 PM - August 19, 2023 |
-| [[122. Best Time to Buy and Sell Stock II|122. Best Time to Buy and Sell Stock II]] | 9:05 AM - August 18, 2023 |
+| Problem                                             | Last update                |
+| --------------------------------------------------- | -------------------------- |
+| [[102. Binary Tree Level Order Traversal|102. Binary Tree Level Order Traversal]]          | 12:33 AM - August 30, 2023 |
+| [[108. Convert Sorted Array to Binary Search Tree|108. Convert Sorted Array to Binary Search Tree]] | 12:31 AM - August 30, 2023 |
+| [[104. Maximum Depth of Binary Tree|104. Maximum Depth of Binary Tree]]               | 12:31 AM - August 30, 2023 |
+| [[103. Binary Tree Zigzag Level Order Traversal|103. Binary Tree Zigzag Level Order Traversal]]   | 12:30 AM - August 30, 2023 |
+| [[101. Symmetric Tree|101. Symmetric Tree]]                             | 12:28 AM - August 30, 2023 |
 
 
 ## Java
-| Problem                                        | Last update               |
-| ---------------------------------------------- | ------------------------- |
-| [[63. Unique Paths II|63. Unique Paths II]]                        | 7:46 PM - August 26, 2023 |
-| [[767. Reorganize String|767. Reorganize String]]                     | 7:44 PM - August 26, 2023 |
-| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 7:31 AM - August 18, 2023 |
+| Problem                                        | Last update                |
+| ---------------------------------------------- | -------------------------- |
+| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 12:07 AM - August 30, 2023 |
+| [[63. Unique Paths II|63. Unique Paths II]]                        | 12:04 AM - August 30, 2023 |
+| [[767. Reorganize String|767. Reorganize String]]                     | 7:44 PM - August 26, 2023  |
 
 
 ## Rust
-| Problem                             | Last update               |
-| ----------------------------------- | ------------------------- |
-| [[63. Unique Paths II|63. Unique Paths II]]             | 7:46 PM - August 26, 2023 |
-| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]] | 7:44 PM - August 26, 2023 |
+| Problem                             | Last update                |
+| ----------------------------------- | -------------------------- |
+| [[63. Unique Paths II|63. Unique Paths II]]             | 12:04 AM - August 30, 2023 |
+| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]] | 7:44 PM - August 26, 2023  |
 
 
 
