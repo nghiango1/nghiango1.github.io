@@ -11,6 +11,7 @@ Given a array `arr`, sort the array (in memory)
 ```python
 arr = [124, 1241, 412, 4, 54 ,5, 34 , 12, 4, 12, 321,3 ,33]
 ```
+
 # Solve
 
 ## Bubble sort
