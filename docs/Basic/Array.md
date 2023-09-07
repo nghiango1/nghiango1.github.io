@@ -415,7 +415,7 @@ The following number `[0]` is there to tell us the offset, that how we want the 
 
 While `b[2]` (8 bit array) is pointing to the start memory + an offset of `8 * 2 bit`. This type of traversal do cost time, base on RAM, but still can be count as instant for the most of case.
 
-## Python array
+## 3.3. Python array
 
 Not this:
 
