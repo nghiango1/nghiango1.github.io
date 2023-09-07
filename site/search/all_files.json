@@ -108,54 +108,6 @@
         "url": "Query%20Language/Dataview%20Query%20Language/"
     },
     {
-        "src_uri": "assets/css/.push",
-        "dest_uri": "assets/css/.push",
-        "name": ".push",
-        "url": "assets/css/.push"
-    },
-    {
-        "src_uri": "assets/css/admonition.css",
-        "dest_uri": "assets/css/admonition.css",
-        "name": "admonition",
-        "url": "assets/css/admonition.css"
-    },
-    {
-        "src_uri": "assets/css/custom_attributes.css",
-        "dest_uri": "assets/css/custom_attributes.css",
-        "name": "custom_attributes",
-        "url": "assets/css/custom_attributes.css"
-    },
-    {
-        "src_uri": "assets/css/customization.css",
-        "dest_uri": "assets/css/customization.css",
-        "name": "customization",
-        "url": "assets/css/customization.css"
-    },
-    {
-        "src_uri": "assets/img/.push",
-        "dest_uri": "assets/img/.push",
-        "name": ".push",
-        "url": "assets/img/.push"
-    },
-    {
-        "src_uri": "assets/js/.push",
-        "dest_uri": "assets/js/.push",
-        "name": ".push",
-        "url": "assets/js/.push"
-    },
-    {
-        "src_uri": "assets/meta/.push",
-        "dest_uri": "assets/meta/.push",
-        "name": ".push",
-        "url": "assets/meta/.push"
-    },
-    {
-        "src_uri": "hidden/.pages",
-        "dest_uri": "hidden/.pages",
-        "name": ".pages",
-        "url": "hidden/.pages"
-    },
-    {
         "src_uri": "images/Pasted image 20230817214253.png",
         "dest_uri": "images/Pasted%20image%2020230817214253.png",
         "name": "Pasted image 20230817214253",
@@ -868,24 +820,6 @@
         "dest_uri": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/",
         "name": "2616. Minimize the Maximum Difference of Pairs",
         "url": "notes/Leetcode%201000-10000/2616.%20Minimize%20the%20Maximum%20Difference%20of%20Pairs/"
-    },
-    {
-        "src_uri": "template/168. Excel Sheet Column Title.md",
-        "dest_uri": "template/168.%20Excel%20Sheet%20Column%20Title/",
-        "name": "168. Excel Sheet Column Title",
-        "url": "template/168.%20Excel%20Sheet%20Column%20Title/"
-    },
-    {
-        "src_uri": "template/459. Repeated Substring Pattern.md",
-        "dest_uri": "template/459.%20Repeated%20Substring%20Pattern/",
-        "name": "459. Repeated Substring Pattern",
-        "url": "template/459.%20Repeated%20Substring%20Pattern/"
-    },
-    {
-        "src_uri": "template/767. Reorganize String.md",
-        "dest_uri": "template/767.%20Reorganize%20String/",
-        "name": "767. Reorganize String",
-        "url": "template/767.%20Reorganize%20String/"
     },
     {
         "src_uri": "assets/images/favicon.png",
