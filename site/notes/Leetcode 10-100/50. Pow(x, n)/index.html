@@ -1058,7 +1058,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="use-built-in-function">Use built-in function<a class="headerlink" href="#use-built-in-function" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">def</span> <span class="nf">myPow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>        <span class="k">return</span> <span class="nb">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
@@ -1072,7 +1072,7 @@
 <p>Basically, we can use the following recursive formula to calculate <code>x^n</code> efficiently:<br/>
 <code>pow(x,n) = pow(x,n/2) * pow(x,n/2) * pow(x,n%2)</code></p>
 <h3 id="python">python<a class="headerlink" href="#python" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <p>There isn’t anything stop python from working</p>
 <ul>
 <li>Implement the function directly using recursion</li>
@@ -1113,7 +1113,7 @@
 </li>
 </ul>
 <h3 id="c-language">C language<a class="headerlink" href="#c-language" title="Permanent link">¶</a></h3>
-<p>(language:: c) (time:: O(1))</p>
+<p><code>O(1)</code></p>
 <p>Using the same logic, but there is some thing to consider:</p>
 <ul>
 <li>We can’t just revert the sign of a number, as <code>int</code> value have 32 bit, which  <code>MAX_INT == 2**31</code> and <code>MIN_INT == 2**31 - 1</code> (because of <code>0</code>) </li>

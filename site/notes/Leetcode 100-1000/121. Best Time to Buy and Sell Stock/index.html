@@ -1019,7 +1019,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 <li>I already solve <a href="../../714.%C2%A0Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Transaction%20Fee" title="714. Best Time to Buy and Sell Stock with Transaction Fee">714. Best Time to Buy and Sell Stock with Transaction Fee</a>, still, it not quite the same.</li>
 </ul>
 <h3 id="brute-force">Brute force<a class="headerlink" href="#brute-force" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n ** 2))</p>
+<p><code>O(n ** 2)</code></p>
 <ul>
 <li>A quick <code>n**2</code> answer</li>
 <li>Which don’t care about how input <code>prices</code> work<ul>
@@ -1043,7 +1043,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 <a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>        <span class="k">return</span> <span class="n">max_price</span>
 </code></pre></div>
 <h2 id="optimizing">Optimizing<a class="headerlink" href="#optimizing" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <ul>
 <li>We can optimize this by try find the max price of <code>prices[i+1: len(prices)]</code> immediately. We could use a Dynamic programming for storing all Maximum value of <code>prices[i+1: len(prices)]</code><br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># TODO</span>

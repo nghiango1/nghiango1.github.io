@@ -1168,7 +1168,7 @@
 <a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>        <span class="k">return</span> <span class="n">out</span>
 </code></pre></div>
 <h2 id="c-implementation">C implementation<a class="headerlink" href="#c-implementation" title="Permanent link">¶</a></h2>
-<p>(language:: c)</p>
+<p><code>c</code></p>
 <p>To prepare for creating <code>char *</code> (using <code>maloc</code>), we want to create a big enough char array, which need to be pre calculating.</p>
 <p>So I just create a big enough memory size in stack, process the problem. Then re-copy the result’s value one by one to the heap allocation variable, already knowing it length and return.</p>
 <p>As string in c is <code>char[]</code> or <code>char *</code> with <code>NULL</code> at end. I make sure to put <code>NULL</code> or <code>00000000</code> into the last element of the result <code>title</code></p>

@@ -1088,7 +1088,7 @@ Opening Only the second tap will water the whole garden [0,5]</p>
 <li>Update the current <strong>end</strong> as our new start point.</li>
 </ul>
 <h3 id="sorted-preprocessing-data-chose-the-best-one">Sorted - preprocessing data - chose the best one.<a class="headerlink" href="#sorted-preprocessing-data-chose-the-best-one" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n log n))</p>
+<p><code>O(n log n)</code></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">def</span> <span class="nf">minTaps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">ranges</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>        <span class="n">covered</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pos</span> <span class="o">-</span> <span class="n">rang</span><span class="p">)</span> <span class="p">,</span> <span class="n">pos</span> <span class="o">+</span> <span class="n">rang</span><span class="p">)</span> <span class="k">for</span> <span class="n">pos</span><span class="p">,</span> <span class="n">rang</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ranges</span><span class="p">)]</span>
@@ -1223,7 +1223,7 @@ Opening Only the second tap will water the whole garden [0,5]</p>
 <p>We can reduce the need to call max(q), to reducing even more space needed. But this also mean we want a better way to store covered, which already cost O(n) space.</p>
 </blockquote>
 <h3 id="optimizing-no-more-sort">Optimizing - No more sort<a class="headerlink" href="#optimizing-no-more-sort" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>I used the same input processing as the Solve that Leetcode done, this way, I can reduce the need of sorting the covered range.</p>
 <table>
 <thead>
@@ -1278,7 +1278,7 @@ Opening Only the second tap will water the whole garden [0,5]</p>
 <a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a>        <span class="k">return</span> <span class="n">total</span>
 </code></pre></div>
 <h3 id="optimizing-2-no-more-maxarr">Optimizing 2 - No more <code>Max(arr)</code><a class="headerlink" href="#optimizing-2-no-more-maxarr" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>It still a nested loop (even it independent with above loop) with a lot of memory allocating for array vector <code>q</code>.<br/>
 This could be done over a single <code>nextMax</code> variable.</p>
 <table>
@@ -1333,7 +1333,7 @@ This could be done over a single <code>nextMax</code> variable.</p>
 <a href="#__codelineno-3-30" id="__codelineno-3-30" name="__codelineno-3-30"></a>        <span class="k">return</span> <span class="n">total</span>
 </code></pre></div>
 <h2 id="actual-on">Actual O(n)<a class="headerlink" href="#actual-on" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>The cleaver way to preprocess the data<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>        <span class="c1"># Create a list to track the maximum reach for each position</span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>        <span class="n">max_reach</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>

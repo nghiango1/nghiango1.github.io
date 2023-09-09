@@ -1036,7 +1036,7 @@
 <p><strong>Follow up:</strong> This problem is similar to <a href="../33.%20Search%20in%20Rotated%20Sorted%20Array/" title="33. Search in Rotated Sorted Array">33. Search in Rotated Sorted Array</a>, but <code>nums</code> may contain <strong>duplicates</strong>. Would this affect the runtime complexity? How and why?</p>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="remove-duplicate-find-shift-point-binary-search">Remove Duplicate + Find shift point + Binary search<a class="headerlink" href="#remove-duplicate-find-shift-point-binary-search" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <h4 id="some-conclusion">Some conclusion<a class="headerlink" href="#some-conclusion" title="Permanent link">¶</a></h4>
 <p>While there is a lot of similarity from <a href="../33.%20Search%20in%20Rotated%20Sorted%20Array/" title="33. Search in Rotated Sorted Array">33. Search in Rotated Sorted Array</a> . The main breaking point is that we can’t effectively find the <a href="../33.%20Search%20in%20Rotated%20Sorted%20Array/#shift-point-finder" title="shift point">shift point</a> as if <code>nums[mid] == nums[0]</code>, it could either be left, or right because of duplication. Both example could be:<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>-  L     M     R

@@ -1050,7 +1050,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 <a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">sliding</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="counting">Counting<a class="headerlink" href="#counting" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>A normal loop through all available number in <code>nums</code> array, I keep a cache that store total appearance on all of the number.</p>
 <p>With that, I then adding the number in to <code>nums</code> array base on how many times they appear</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>    <span class="k">def</span> <span class="nf">counting</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
@@ -1072,7 +1072,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 <a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a>            <span class="n">nums</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="sliding-pointer">Sliding pointer<a class="headerlink" href="#sliding-pointer" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>Using the above counting method, we isn’t consider the array is  sorted in <strong>non-decreasing order</strong>: Equal number is right next each other. So, we only need to check the next following number on every number <code>value</code> change to count total appearance of <code>value</code>. </p>
 <p>Which mean, we can effectively update the <code>nums</code> array by using two <code>index</code>, <code>faster</code> pointer, follow 3 rules:</p>
 <ul>

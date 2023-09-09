@@ -1041,7 +1041,7 @@ Find <code>b</code></p>
 </code></pre></div>
 <h1 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h1>
 <h2 id="jumping-in-sqrt">Jumping in sqrt()<a class="headerlink" href="#jumping-in-sqrt" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(sqrt n))</p>
+<p><code>O(sqrt n)</code></p>
 <p>By the define of the problem:</p>
 <ul>
 <li>If we used up one ball (one call that <code>checkBreak(x)</code> return true), the next one we have to do a linear search so that we can find the exact <code>b</code> value.</li>
@@ -1109,7 +1109,7 @@ Find <code>b</code></p>
 <a href="#__codelineno-2-50" id="__codelineno-2-50" name="__codelineno-2-50"></a>    <span class="n">test</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="typescript-implement">Typescript implement<a class="headerlink" href="#typescript-implement" title="Permanent link">¶</a></h2>
-<p>(language:: typescript) (time:: O(sqrt n))</p>
+<p><code>O(sqrt n)</code></p>
 <p>This instead take a different way of input (and testing using jest)</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">two_crystal_balls</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@code/TwoCrystalBalls"</span><span class="p">;</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>
@@ -1146,7 +1146,7 @@ Find <code>b</code></p>
 <a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="p">}</span>
 </code></pre></div>
 <h2 id="c-implementation">C implementation<a class="headerlink" href="#c-implementation" title="Permanent link">¶</a></h2>
-<p>(language:: c) (time:: O(sqrt n))</p>
+<p><code>O(sqrt n)</code></p>
 <p>I do try using <code>math.h</code>,  but it seem my library can’t even link, so I instead use a implementation for integer sqrt (Newton’s method, Wikipedia version). </p>
 <p>Here I use same input as the python version, where we are passed with check break <code>cb</code> function (that only return <code>True</code> two time and return <code>-1</code>  to mimic the dropping) and number <code>n</code> for building height.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>

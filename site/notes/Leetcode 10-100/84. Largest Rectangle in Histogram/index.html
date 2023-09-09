@@ -1033,7 +1033,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.</p
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="cache-it-all">Cache it all<a class="headerlink" href="#cache-it-all" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n ** 2))</p>
+<p><code>O(n ** 2)</code></p>
 <p>We need what information, we cache it:</p>
 <ul>
 <li>Loop through the provided <code>height</code> array from left to right (<code>[0..n]</code>)</li>
@@ -1059,7 +1059,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.</p
 <a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>        <span class="k">return</span> <span class="n">largest</span>
 </code></pre></div>
 <h2 id="optimize">Optimize<a class="headerlink" href="#optimize" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n ** 2 log n))</p>
+<p><code>O(n ** 2 log n)</code></p>
 <ul>
 <li><strong>Binary search</strong>: Using binary search instead of loop through all possible <code>p in [0..h]</code> with each bar; only calculating and caching p with a clear know of it</li>
 <li><strong>Optimize memory</strong>: We only need index <code>(i-1)</code> information to process index <code>i</code>, so we don’t need to cache/can free any thing before it.</li>
@@ -1157,7 +1157,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.</p
 </li>
 <li>We also can append a <code>[0]</code> at the end so we can reused the logic inside the loop to find largest rectangle, instead of using separated loop at the end.</li>
 </ul>
-<p>(language:: python) (time:: O(n ** 2))</p>
+<p><code>O(n ** 2)</code></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">def</span> <span class="nf">largestRectangleArea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">heights</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="n">cache</span> <span class="o">=</span> <span class="p">[]</span>

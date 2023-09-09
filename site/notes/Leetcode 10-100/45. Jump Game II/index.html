@@ -1019,7 +1019,7 @@
 </ul>
 <h3 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h3>
 <h4 id="water-falling">Water falling<a class="headerlink" href="#water-falling" title="Permanent link">¶</a></h4>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>Following a minimized greedy/dynamic programming minimized path problem from graph.</p>
 <ul>
 <li>Calling the <code>minimum</code> array is to store the total minimal step needed to reach each element, <code>minimum[i]</code> correspond to <code>element[i]</code>. At first, <code>minimum</code> array isn’t set, as none element is being processed.</li>
@@ -1055,7 +1055,7 @@
 <a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>        <span class="k">return</span> <span class="n">minimum</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div>
 <p>So I calling it water fall basically because the height being collapsing all at once (this is visualization process on white board)</p>
-<p>Time complexity: (time:: O(n))</p>
+<p>Time complexity: <code>O(n)</code></p>
 <ul>
 <li>BFS: Each <code>minimum</code> is updated once, visited once;</li>
 <li>DP update loop: By updating temporary <code>p</code> pointer, the nested loop only run in total n times independent with the total time BFS queue call (thus not our time complexity isn’t multiple to O(n^2) ). </li>

@@ -1026,7 +1026,7 @@
 </ul>
 <h3 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h3>
 <h4 id="dfs-or-bfs">DFS or BFS<a class="headerlink" href="#dfs-or-bfs" title="Permanent link">¶</a></h4>
-<p>(language:: python) (time:: O(n!))</p>
+<p><code>O(n!)</code></p>
 <p>Goes through each stage of the permutations until we using all available number in <code>nums</code> array</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>
@@ -1071,7 +1071,7 @@
 <a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a>    <span class="n">test</span><span class="p">()</span>
 </code></pre></div></p>
 <h3 id="reuse-global-variable">Reuse global variable<a class="headerlink" href="#reuse-global-variable" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n!))</p>
+<p><code>O(n!)</code></p>
 <p>Taking approach from <a href="../../77.%C2%A0Combinations" title="77. Combinations">77. Combinations</a>, we can try reuse some of our created array to make the code run faster, while minimize total <code>for loop</code></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>

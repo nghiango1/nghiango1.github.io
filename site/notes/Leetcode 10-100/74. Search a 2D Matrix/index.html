@@ -1054,7 +1054,7 @@
 </ul>
 <h1 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h1>
 <h2 id="binary-searching">Binary searching<a class="headerlink" href="#binary-searching" title="Permanent link">¶</a></h2>
-<p>(time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <h3 id="takeaway">Takeaway<a class="headerlink" href="#takeaway" title="Permanent link">¶</a></h3>
 <p>Just take the two dimension array as one dimension (Which c naively support with its <code>stack</code> base memory allocate). </p>
 <ul>
@@ -1085,7 +1085,7 @@
 </code></pre></div></p>
 <p>Which mean, it not possible using the array directly by pointer or <code>(int) *(matrix + x) +y) != (int) *matrix + x*n +y</code></p>
 <h2 id="actual-implementation">Actual implementation<a class="headerlink" href="#actual-implementation" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <p>I like to use binary search that the start of <code>left</code>, <code>right</code> is not in the array, example:</p>
 <ul>
 <li>An array <code>matrix</code> that span over <code>[0..=n]</code> range (inclusive), <code>left, right = -1, n+1</code></li>

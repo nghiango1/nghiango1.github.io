@@ -1076,7 +1076,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="dp-but-fail-one">DP but fail one<a class="headerlink" href="#dp-but-fail-one" title="Permanent link">¶</a></h3>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <blockquote>
 <p>This just throw TLE a lot on me </p>
 </blockquote>
@@ -1231,7 +1231,7 @@ I finding all possible available appearance of every string, storing they head, 
 <a href="#__codelineno-2-79" id="__codelineno-2-79" name="__codelineno-2-79"></a>        <span class="k">return</span> <span class="n">res</span>
 </code></pre></div>
 <h3 id="fallback-1000">Fallback 1000<a class="headerlink" href="#fallback-1000" title="Permanent link">¶</a></h3>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>So, in case we have of a lot possible path, this give a fall back needed to process the problem. Just process the first 1000 possible path, if it can’t solve the problem, going with the full join</p>
 <p>While this barely can finish the problem, but Leetcode do a add up in TLE calculating (They send all the  test as one input, after certain time, you get a TLE), which mean I pass the TLE case, but leaving me no time left to easier case. </p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
@@ -1346,7 +1346,7 @@ This meaning we need to do a lot of small words length. Then the split seem isn�
 </ul>
 <p>We will want to reuse path a lot more. with a more precision combine, as we only do combine on <code>self.isadj(tk, hp)</code>, which it self can be added to <code>cache</code> instead of checking boardly. So maybe, I need to use some of the head, tail as a <code>cache</code> input to make this a possible solution.</p>
 <h2 id="yank-it-trie-tree-solution">Yank it, Trie tree solution<a class="headerlink" href="#yank-it-trie-tree-solution" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <h2 id="read-and-learn">Read and learn<a class="headerlink" href="#read-and-learn" title="Permanent link">¶</a></h2>
 <p>There is some Trie Tree that you need to learn and finish this problem? Maybe, but I try and fail on DP, so let have some basic reading this code:</p>
 <ul>

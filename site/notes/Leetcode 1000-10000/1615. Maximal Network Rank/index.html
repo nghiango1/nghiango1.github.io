@@ -1065,7 +1065,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="preprocess-data">Preprocess data<a class="headerlink" href="#preprocess-data" title="Permanent link">¶</a></h3>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>Consider this <code>&lt;city, road&gt;</code> problem as a graph <code>&lt;node, edge&gt;</code></p>
 <p>Before hand, we can calculating each node <strong>rank</strong>. Which define as the total number of out going edge of the node:</p>
 <p>The <code>roads</code> array is a graph represent in edges array:</p>
@@ -1093,7 +1093,7 @@
 <a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">nodeRank</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="brute-force-try-all-possible">Brute force / Try all possible<a class="headerlink" href="#brute-force-try-all-possible" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>By talking all the possible combination of 2 node, we can easily calculating the maximum rank needed to be return.</p>
 <p>The problem specific this:</p>
 <blockquote>
@@ -1154,7 +1154,7 @@
 <a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a>        <span class="k">return</span> <span class="n">maximal</span>
 </code></pre></div>
 <h2 id="connected-tablematrix-with-brute-force">Connected table/matrix with brute force<a class="headerlink" href="#connected-tablematrix-with-brute-force" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>Instead of adjacent table, we could also use Connected table <code>matrix</code>, as with:</p>
 <ul>
 <li>With edge <code>(u,v)</code> is in graph, we representing them in a <code>matrix[u,v] = True</code></li>
@@ -1203,7 +1203,7 @@
 <a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a>        <span class="k">return</span> <span class="n">maximal</span>
 </code></pre></div>
 <h2 id="edge-only-representation-with-sort-binary-search-and-brute-force">Edge only representation with sort, binary search and brute force<a class="headerlink" href="#edge-only-representation-with-sort-binary-search-and-brute-force" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>A no one ask for solution, while we reduce the need to preprocessing data. Using just edges need a lot of thing to reduce the time complexity from <code>O(n**4)</code> down to <code>O(n**2 * log(n**2))</code></p>
 <ul>
 <li>Quickly check <code>(u,v)</code> in graph</li>
@@ -1283,7 +1283,7 @@
 <a href="#__codelineno-4-44" id="__codelineno-4-44" name="__codelineno-4-44"></a>        <span class="k">return</span> <span class="n">maximal</span>
 </code></pre></div>
 <h2 id="edge-only-with-hash-map-brute-force">Edge only with hash map, brute force<a class="headerlink" href="#edge-only-with-hash-map-brute-force" title="Permanent link">¶</a></h2>
-<p>(language:: python)</p>
+<p><code>python</code></p>
 <p>By using hash function, we can easily check if <code>(u,v)</code> in roads in <code>O(1)</code> time, which could be on pair with Connected table/matrix solution.</p>
 <p>While we can directly convent roads to <code>set()</code> in python, we need to handle case where <code>(u,v)</code> is in road, but <code>(v,u)</code> is not.</p>
 <table>

@@ -1034,7 +1034,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="built-in-bit_count-python">Built-in <code>bit_count()</code> python<a class="headerlink" href="#built-in-bit_count-python" title="Permanent link">¶</a></h3>
-<p>(language:: python) (time:: O(n log n))</p>
+<p><code>O(n log n)</code></p>
 <p>Python number have built-in <code>bit_count()</code> that give us total <code>1</code> in bit representation of any number. We assuming this take <code>log n</code> to count it.</p>
 <table>
 <thead>
@@ -1061,7 +1061,7 @@
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>        <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">bit_count</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
 </code></pre></div>
 <h2 id="dynamic-programming">Dynamic programming<a class="headerlink" href="#dynamic-programming" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>We can split any binary number into <code>&lt;right-shift&gt; + &lt;remain 1/0&gt;</code> , for example <code>100110111001</code> can be split into <code>10011011100</code> and <code>1</code>:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>bit_count(100110111001) = bit_count(10011011100) + bit_count(1)
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>                        = bit_count(100110111001 &gt;&gt; 1) + bit_count(1)

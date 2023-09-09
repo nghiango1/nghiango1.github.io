@@ -1024,7 +1024,7 @@ Populate each next pointer to point to its next right node. If there is no next 
 </ul>
 <h1 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h1>
 <h2 id="tree-traversal-bfs">Tree traversal - BFS<a class="headerlink" href="#tree-traversal-bfs" title="Permanent link">¶</a></h2>
-<p>(language:: python) (time:: O(n))</p>
+<p><code>O(n)</code></p>
 <p>By reusing our <a href="../102.%20Binary%20Tree%20Level%20Order%20Traversal/" title="102. Binary Tree Level Order Traversal">102. Binary Tree Level Order Traversal</a>, we can just using result to help us populate every node next.</p>
 <p>As the order of result is already left -&gt; right, we loop and set our<br/>
 <code>node[i].next = node[i+1]</code> with every <code>result[0..n]</code></p>

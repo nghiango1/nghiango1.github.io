@@ -1058,7 +1058,7 @@
 </ul>
 <h3 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h3>
 <h4 id="find-the-shift-point-of-the-sorted-array-and-binary-search">Find the shift point of the sorted array and Binary search<a class="headerlink" href="#find-the-shift-point-of-the-sorted-array-and-binary-search" title="Permanent link">¶</a></h4>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <p>Source code: <a href="https://github.com/ylsama/leetcode/blob/main/33.py">https://github.com/ylsama/leetcode/blob/main/33.py</a></p>
 <h5 id="shift-point-finder">Shift point finder<a class="headerlink" href="#shift-point-finder" title="Permanent link">¶</a></h5>
 <p>We represent the sorted <code>nums</code> array as <code>[1..n]</code>, the shift point is <code>shiftPoint</code>, we have:</p>
@@ -1156,7 +1156,7 @@ We conclude using [[33. Search in Rotated Sorted Array#^9bc286|the analysis abou
 <a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">shiftPoint</span><span class="p">,</span> <span class="n">isFound</span><span class="p">)</span>
 </code></pre></div>
 <h4 id="binary-search-implemetaion">Binary search implemetaion<a class="headerlink" href="#binary-search-implemetaion" title="Permanent link">¶</a></h4>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <p>After found the shift point, we can treat <code>nums</code> as two <code>seperated</code> sorted array and we can use normal binary search to find the target on each one.<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>    <span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">startIndex</span><span class="p">,</span><span class="n">endIndex</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
 <a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>        <span class="n">targetIndex</span><span class="p">,</span> <span class="n">isFound</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span>
@@ -1183,7 +1183,7 @@ We conclude using [[33. Search in Rotated Sorted Array#^9bc286|the analysis abou
 <a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a>        <span class="k">return</span> <span class="p">(</span><span class="n">targetIndex</span><span class="p">,</span> <span class="n">isFound</span><span class="p">)</span>
 </code></pre></div></p>
 <h4 id="final-main-function">Final main function<a class="headerlink" href="#final-main-function" title="Permanent link">¶</a></h4>
-<p>(language:: python) (time:: O(log n))</p>
+<p><code>O(log n)</code></p>
 <p>Our final main function <code>search</code> procedure:</p>
 <ol>
 <li>Using <code>findShiftPoint</code> to find the shift point of the input array</li>
