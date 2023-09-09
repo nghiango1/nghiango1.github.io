@@ -758,23 +758,23 @@
 <nav aria-label="Comparing" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#java">
-    java:
+<a class="md-nav__link" href="#language-java">
+    (language:: java):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#c">
-    c:
+<a class="md-nav__link" href="#language-c">
+    (language:: c):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#python3">
-    python3:
+<a class="md-nav__link" href="#language-python">
+    (language:: python):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#rust">
-    rust:
+<a class="md-nav__link" href="#language-rust">
+    (language:: rust):
   </a>
 </li>
 <li class="md-nav__item">
@@ -994,23 +994,23 @@
 <nav aria-label="Comparing" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#java">
-    java:
+<a class="md-nav__link" href="#language-java">
+    (language:: java):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#c">
-    c:
+<a class="md-nav__link" href="#language-c">
+    (language:: c):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#python3">
-    python3:
+<a class="md-nav__link" href="#language-python">
+    (language:: python):
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#rust">
-    rust:
+<a class="md-nav__link" href="#language-rust">
+    (language:: rust):
   </a>
 </li>
 <li class="md-nav__item">
@@ -1054,6 +1054,11 @@
 <a class="md-tag" href="../../../tags/#leetcode">leetcode</a>
 <a class="md-tag" href="../../../tags/#computer_sience">computer_sience</a>
 <a class="md-tag" href="../../../tags/#coding_chalenge">coding_chalenge</a>
+<a class="md-tag" href="../../../tags/#java">java</a>
+<a class="md-tag" href="../../../tags/#c">c</a>
+<a class="md-tag" href="../../../tags/#python">python</a>
+<a class="md-tag" href="../../../tags/#rust">rust</a>
+<a class="md-tag" href="../../../tags/#on-2">O(n ** 2)</a>
 </nav>
 <!-- Actions -->
 <!--
@@ -1090,6 +1095,7 @@
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
 <h3 id="dynamic-programming">Dynamic programming<a class="headerlink" href="#dynamic-programming" title="Permanent link">¶</a></h3>
+<p>(language:: java) (time:: O(n ** 2))</p>
 <p>The ideal start with a update function:<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>stage_a + coin_value -&gt; stage_b = stage_&lt;a+ coin_value&gt;
 </code></pre></div></p>
@@ -1111,7 +1117,7 @@
 <a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="p">}</span>
 </code></pre></div></p>
 <blockquote>
-<p>The for loop odder have an impact on how the Calculation run:</p>
+<p>The for loop order have an impact on how the Calculation run:</p>
 </blockquote>
 <p>If you instead doing this:<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1126,9 +1132,9 @@
 </ul>
 <h1 id="comparing">Comparing<a class="headerlink" href="#comparing" title="Permanent link">¶</a></h1>
 <p>I also try some more language to help me familiar with other language array too, it quite surprise to see rust and java beat c in runtime.</p>
-<h2 id="java"><code>java</code>:<a class="headerlink" href="#java" title="Permanent link">¶</a></h2>
+<h2 id="language-java">(language:: java):<a class="headerlink" href="#language-java" title="Permanent link">¶</a></h2>
 <p>We have <code>int</code> array automate initiation as 0</p>
-<h2 id="c"><code>c</code>:<a class="headerlink" href="#c" title="Permanent link">¶</a></h2>
+<h2 id="language-c">(language:: c):<a class="headerlink" href="#language-c" title="Permanent link">¶</a></h2>
 <p>It keep yelling me about how I can’t using <code>int count[amount+1] = {0}</code>; This just mean I have to use a hard code value to use this feature of the language.<br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="cp">#define MAX_AMOUNT 5001</span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="p">[</span><span class="n">MAX_AMOUNT</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
@@ -1150,7 +1156,7 @@ Also, C not have <code>for each</code> built-in the language syntax, so I use a 
 <blockquote>
 <p>For an un-know reason, but it c quite slow some time when I try to submit result.</p>
 </blockquote>
-<h2 id="python3"><code>python3</code>:<a class="headerlink" href="#python3" title="Permanent link">¶</a></h2>
+<h2 id="language-python">(language:: python):<a class="headerlink" href="#language-python" title="Permanent link">¶</a></h2>
 <p>I can’t seem to know better way to initiation a array in python. Also, I use python to make my first implementation, planning process.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
 <a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="k">def</span> <span class="nf">change</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">coins</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
@@ -1164,7 +1170,7 @@ Also, C not have <code>for each</code> built-in the language syntax, so I use a 
 <a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a>
 <a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a>        <span class="k">return</span> <span class="n">count</span><span class="p">[</span><span class="n">amount</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="rust"><code>rust</code>:<a class="headerlink" href="#rust" title="Permanent link">¶</a></h2>
+<h2 id="language-rust">(language:: rust):<a class="headerlink" href="#language-rust" title="Permanent link">¶</a></h2>
 <p>While rust have some more similar way to create array like <code>c</code>, it require the variable to be constant example. <br/>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">const</span><span class="w"> </span><span class="n">MAX_AMOUNT</span>: <span class="kt">usize</span> <span class="o">=</span><span class="w"> </span><span class="mi">5000</span><span class="p">;</span>
 <a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">MAX_AMOUNT</span><span class="p">];</span>
@@ -1244,7 +1250,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <small>
 <!-- mkdocs-git-revision-date-localized-plugin -->
 <u>Last update</u> :
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2023</span>
 <!-- mkdocs-git-revision-date-plugin -->
 <br/>
 <u>Created</u> :
