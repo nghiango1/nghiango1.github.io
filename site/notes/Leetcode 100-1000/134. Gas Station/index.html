@@ -566,6 +566,40 @@
 <a class="md-nav__link" href="#solve">
     Solve
   </a>
+<nav aria-label="Solve" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#white-board">
+    White board
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-1-on-2-trying-it-all">
+    Implementation 1 : O(n ** 2) trying it all
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sliding-window">
+    Sliding window
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#python">
+    Python
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#any-other-language-implementation">
+    Any other language implementation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#still-why-yank-and-read-the-code">
+    Still, why?? - Yank and read the code
+  </a>
 </li>
 </ul>
 </nav>
@@ -593,6 +627,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../146.%20LRU%20Cache/">
         146. LRU Cache
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../148.%20Sort%20List/">
+        148. Sort List
       </a>
 </li>
 <li class="md-nav__item">
@@ -944,6 +983,40 @@
 <a class="md-nav__link" href="#solve">
     Solve
   </a>
+<nav aria-label="Solve" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#white-board">
+    White board
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation-1-on-2-trying-it-all">
+    Implementation 1 : O(n ** 2) trying it all
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sliding-window">
+    Sliding window
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#python">
+    Python
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#any-other-language-implementation">
+    Any other language implementation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#still-why-yank-and-read-the-code">
+    Still, why?? - Yank and read the code
+  </a>
 </li>
 </ul>
 </nav>
@@ -978,6 +1051,11 @@
 <a class="md-tag" href="../../../tags/#leetcode">leetcode</a>
 <a class="md-tag" href="../../../tags/#computer_sience">computer_sience</a>
 <a class="md-tag" href="../../../tags/#coding_chalenge">coding_chalenge</a>
+<a class="md-tag" href="../../../tags/#python">python</a>
+<a class="md-tag" href="../../../tags/#c">c</a>
+<a class="md-tag" href="../../../tags/#rust">rust</a>
+<a class="md-tag" href="../../../tags/#on-2">O(n ** 2)</a>
+<a class="md-tag" href="../../../tags/#on">O(n)</a>
 </nav>
 <!-- Actions -->
 <!--
@@ -1018,6 +1096,199 @@ Therefore, you can’t travel around the circuit once no matter where you start.
 <li><code>0 &lt;= gas[i], cost[i] &lt;= 104</code></li>
 </ul>
 <h2 id="solve">Solve<a class="headerlink" href="#solve" title="Permanent link">¶</a></h2>
+<h3 id="white-board">White board<a class="headerlink" href="#white-board" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../../images/Pasted%20image%2020230917171445.png"><img alt="Pasted image 20230917171445.png" src="../../../images/Pasted%20image%2020230917171445.png" title="Pasted image 20230917171445.png"/></a></p>
+<p>Here I see two 2 option:</p>
+<ol>
+<li>A quick O(n ** 2) case:<br/>
+    Which we try on each start point, and simulating the running car (oblivious case)</li>
+<li>Try to kept the result (caching):<ul>
+<li>It hard to reuse the calculated path, if we ever try to reused, a space needed in worst case could be O(n ** 2). Here I could try pre-calculate sum gas[0..i] and cost[0..i]. But, again, it seem not that ideal using that could help solve the problem</li>
+<li>The next one I think it could be better is a sliding window on a recursive list<ul>
+<li>Start with left = right = 0</li>
+<li>When the window reach length = n, or | left - right | = n we can stop and return left </li>
+<li>While Increasing right, if the total of sliding window <code>total &lt; 0</code>, we increasing left till <code>total &gt;= 0</code></li>
+<li>This mean, if the ever <code>left &gt; n</code>, we have try all possible start point, thus we can’t found a solution and return -1 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Attempt on flow chart<br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../../images/Pasted%20image%2020230917171534.png"><img alt="Pasted image 20230917171534.png" src="../../../images/Pasted%20image%2020230917171534.png" title="Pasted image 20230917171534.png"/></a></p>
+<h3 id="implementation-1-on-2-trying-it-all">Implementation 1 : O(n ** 2) trying it all<a class="headerlink" href="#implementation-1-on-2-trying-it-all" title="Permanent link">¶</a></h3>
+<p><code>O(n ** 2)</code></p>
+<ul>
+<li>Still, even a easy thing could go wrong, it cost me quite some times to implement this some how ??</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    <span class="k">def</span> <span class="nf">canCompleteCircuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gas</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">cost</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">gas</span><span class="p">)</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>            <span class="n">total_gas</span> <span class="o">=</span> <span class="n">gas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>            <span class="k">if</span> <span class="n">total_gas</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>                <span class="k">continue</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>            <span class="n">check</span> <span class="o">=</span> <span class="kc">True</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>            <span class="c1"># print (f"gas: {total_gas}, at gas[{i}]")</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>                <span class="n">nextGas</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>                <span class="n">nextGas</span> <span class="o">%=</span> <span class="n">n</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>                <span class="n">nextCost</span> <span class="o">=</span> <span class="n">cost</span><span class="p">[</span><span class="n">nextGas</span><span class="p">]</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>                <span class="n">nextGas</span> <span class="o">=</span> <span class="n">gas</span><span class="p">[</span><span class="n">nextGas</span><span class="p">]</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>                <span class="n">total_gas</span> <span class="o">=</span> <span class="n">total_gas</span> <span class="o">+</span> <span class="n">nextGas</span> <span class="o">-</span> <span class="n">nextCost</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>                <span class="c1"># print (f"gas: {total_gas}, at gas[{(i + j) % n}]")</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a>                <span class="k">if</span> <span class="n">total_gas</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>                    <span class="n">check</span> <span class="o">=</span> <span class="kc">False</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>                    <span class="k">break</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>            <span class="k">if</span> <span class="n">check</span><span class="p">:</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>                <span class="k">return</span> <span class="n">i</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<h2 id="sliding-window">Sliding window<a class="headerlink" href="#sliding-window" title="Permanent link">¶</a></h2>
+<p><code>O(n)</code></p>
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">¶</a></h2>
+<ul>
+<li>The flow chart is actually right, which is nice</li>
+<li><code>right</code> can only travel <code>2n</code>, <code>left</code> can only travel <code>n</code>, while it is nested, both is independent, making this a <code>O(n)</code> times complexity</li>
+</ul>
+<p>Still, the result isn’t that great at all ? Here is final implementation</p>
+<blockquote>
+<p>1141ms<br/>
+Beats 22.82% of users with Python3</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>    <span class="k">def</span> <span class="nf">canCompleteCircuit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gas</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">cost</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">gas</span><span class="p">)</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>        <span class="n">total</span> <span class="o">=</span> <span class="n">left</span> <span class="o">=</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>        <span class="k">while</span> <span class="n">right</span> <span class="o">&lt;</span> <span class="n">left</span> <span class="o">+</span> <span class="n">n</span><span class="p">:</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a>            <span class="n">total</span> <span class="o">+=</span> <span class="n">gas</span><span class="p">[</span><span class="n">right</span> <span class="o">%</span> <span class="n">n</span><span class="p">]</span> <span class="o">-</span> <span class="n">cost</span><span class="p">[</span><span class="n">right</span> <span class="o">%</span> <span class="n">n</span><span class="p">]</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a>            <span class="k">while</span> <span class="n">total</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a>                <span class="n">total</span> <span class="o">-=</span> <span class="n">gas</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">-</span> <span class="n">cost</span><span class="p">[</span><span class="n">left</span><span class="p">]</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a>                <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a>                <span class="k">if</span> <span class="n">left</span> <span class="o">&gt;=</span> <span class="n">n</span><span class="p">:</span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a>                    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a>            <span class="n">right</span> <span class="o">+=</span> <span class="mi">1</span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a>        <span class="k">return</span> <span class="n">left</span>
+</code></pre></div>
+<h2 id="any-other-language-implementation">Any other language implementation<a class="headerlink" href="#any-other-language-implementation" title="Permanent link">¶</a></h2>
+<p>This make me feel like try on a different language, again, every one beat me some how while using C</p>
+<blockquote>
+<p>127ms<br/>
+Beats 53.02% of users with C</p>
+</blockquote>
+<p><code>c</code><br/>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">canCompleteCircuit</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">gas</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">gasSize</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">cost</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">costSize</span><span class="p">){</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costSize</span><span class="p">;</span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">right</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">gas</span><span class="p">[</span><span class="n">right</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cost</span><span class="p">[</span><span class="n">right</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">];</span>
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a>
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">total</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">            </span><span class="n">total</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">gas</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cost</span><span class="p">[</span><span class="n">left</span><span class="p">];</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">            </span><span class="n">left</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">            </span>
+<a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">left</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">            </span><span class="p">}</span>
+<a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">        </span><span class="n">right</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">left</span><span class="p">;</span>
+<a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="p">}</span>
+</code></pre></div></p>
+<p>Still, Leetcode C calculating result implementation is slow (too much over head) i think, let try another, use rust this time. It still slower than a lot of people here ?<br/>
+<code>rust</code></p>
+<blockquote>
+<p>12ms<br/>
+Beats 69.15% of users with Rust</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">impl</span><span class="w"> </span><span class="n">Solution</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">can_complete_circuit</span><span class="p">(</span><span class="n">gas</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">cost</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gas</span><span class="p">.</span><span class="n">len</span><span class="p">();</span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-3-7" id="__codelineno-3-7" name="__codelineno-3-7"></a>
+<a href="#__codelineno-3-8" id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="k">while</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-9" id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">            </span><span class="n">total</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">gas</span><span class="p">[</span><span class="n">right</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cost</span><span class="p">[</span><span class="n">right</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">n</span><span class="p">];</span>
+<a href="#__codelineno-3-10" id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">            </span><span class="k">while</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-11" id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">                </span><span class="n">total</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">gas</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cost</span><span class="p">[</span><span class="n">left</span><span class="p">];</span>
+<a href="#__codelineno-3-12" id="__codelineno-3-12" name="__codelineno-3-12"></a>
+<a href="#__codelineno-3-13" id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">                </span><span class="n">left</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-3-14" id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-3-15" id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-3-16" id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">                </span><span class="p">}</span>
+<a href="#__codelineno-3-17" id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">            </span><span class="p">}</span>
+<a href="#__codelineno-3-18" id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">            </span><span class="n">right</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-3-19" id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-3-20" id="__codelineno-3-20" name="__codelineno-3-20"></a>
+<a href="#__codelineno-3-21" id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">        </span><span class="n">left</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">i32</span>
+<a href="#__codelineno-3-22" id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-3-23" id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="still-why-yank-and-read-the-code">Still, why?? - Yank and read the code<a class="headerlink" href="#still-why-yank-and-read-the-code" title="Permanent link">¶</a></h2>
+<p><code>O(n)</code></p>
+<p>Here is the best code possible in rust (5ms)</p>
+<ul>
+<li>First it seem just add all gas and cost, enumerate it, result <code>(idx, diff)</code></li>
+<li>Wrapping a Fold to make a accumulator tuple on 3 variable: <code>(total_gas, current_gas, start)</code></li>
+<li>Loop through all index and <code>(idx, diff)</code> with key control flow:<ul>
+<li><code>current_gas &lt; 0</code> work just like total of our sliding window, and instead of increasing <code>left</code> by one each, we just need to jump to <code>index+1</code> (~ <code>right+1</code> in my implement) here it seem (?)</li>
+<li>It not even need to calculate anything above <code>O(n)</code>. The <code>total_gas</code> is obliviously the total of our sliding window if we ever found a result.  Which if it &lt; 0, making it a invalid result and we return <code>-1</code> </li>
+</ul>
+</li>
+<li>By all of this, return the final <code>total</code> accumulation on all <code>gas[i] - cost[i]</code>, and <code>start</code> value.</li>
+</ul>
+<p>For my thought, this have a lot of assuming and reasoning behind that we could ever use this type of return result. We are seem trying to:</p>
+<ul>
+<li>Combine our <code>right := left -&gt; left + n</code> accumulation loop</li>
+<li>With our <code>left</code> updating loop skip -&gt; Just jump to <code>index + 1</code> and set total to <code>0</code></li>
+<li>With reducing the need to recalculating <code>total_gas</code></li>
+</ul>
+<blockquote>
+<p>This all cost quite some time to analyzing and isn’t seem to be possible with my current knowledge </p>
+</blockquote>
+<p>Resubmit the same code, result is worse than my implementation. This make me think that Leetcode is just in heavy load, and my implementation is good enough </p>
+<blockquote>
+<p>15ms<br/>
+Beats 44.68% of users with Rust</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">impl</span><span class="w"> </span><span class="n">Solution</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">pub</span><span class="w"> </span><span class="k">fn</span> <span class="nf">can_complete_circuit</span><span class="p">(</span><span class="n">gas</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">cost</span>: <span class="nb">Vec</span><span class="o">&lt;</span><span class="kt">i32</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="kt">i32</span> <span class="p">{</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">        </span><span class="fm">assert!</span><span class="p">(</span><span class="n">gas</span><span class="p">.</span><span class="n">len</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">        </span><span class="fm">assert_eq!</span><span class="p">(</span><span class="n">gas</span><span class="p">.</span><span class="n">len</span><span class="p">(),</span><span class="w"> </span><span class="n">cost</span><span class="p">.</span><span class="n">len</span><span class="p">());</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="p">(</span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gas</span>
+<a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">            </span><span class="p">.</span><span class="n">into_iter</span><span class="p">()</span>
+<a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">            </span><span class="p">.</span><span class="n">zip</span><span class="p">(</span><span class="n">cost</span><span class="p">.</span><span class="n">into_iter</span><span class="p">())</span>
+<a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">            </span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="o">|</span><span class="p">(</span><span class="n">gas</span><span class="p">,</span><span class="w"> </span><span class="n">cost</span><span class="p">)</span><span class="o">|</span><span class="w"> </span><span class="n">gas</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cost</span><span class="p">)</span>
+<a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">            </span><span class="p">.</span><span class="n">enumerate</span><span class="p">()</span>
+<a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">            </span><span class="p">.</span><span class="n">fold</span><span class="p">(</span>
+<a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="w">                </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+<a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="w">                </span><span class="o">|</span><span class="p">(</span><span class="k">mut</span><span class="w"> </span><span class="n">total_gas</span><span class="p">,</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">current_gas</span><span class="p">,</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">start</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="n">idx</span><span class="p">,</span><span class="w"> </span><span class="n">diff</span><span class="p">)</span><span class="o">|</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">                    </span><span class="n">total_gas</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">diff</span><span class="p">;</span>
+<a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="w">                    </span><span class="n">current_gas</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">diff</span><span class="p">;</span>
+<a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="n">current_gas</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="w">                        </span><span class="n">current_gas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="w">                        </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="w">                    </span><span class="p">}</span>
+<a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a>
+<a href="#__codelineno-4-21" id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="w">                    </span><span class="p">(</span><span class="n">total_gas</span><span class="p">,</span><span class="w"> </span><span class="n">current_gas</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">)</span>
+<a href="#__codelineno-4-22" id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="w">                </span><span class="p">},</span>
+<a href="#__codelineno-4-23" id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="w">            </span><span class="p">);</span>
+<a href="#__codelineno-4-24" id="__codelineno-4-24" name="__codelineno-4-24"></a>
+<a href="#__codelineno-4-25" id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-26" id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="w">            </span><span class="n">start</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">i32</span>
+<a href="#__codelineno-4-27" id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-4-28" id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="w">            </span><span class="o">-</span><span class="mi">1</span>
+<a href="#__codelineno-4-29" id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-4-30" id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-4-31" id="__codelineno-4-31" name="__codelineno-4-31"></a><span class="p">}</span>
+</code></pre></div>
 <!-- Source file information -->
 <!-- taken from 
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
@@ -1026,7 +1297,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <small>
 <!-- mkdocs-git-revision-date-localized-plugin -->
 <u>Last update</u> :
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2023</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2023</span>
 <!-- mkdocs-git-revision-date-plugin -->
 <br/>
 <u>Created</u> :
