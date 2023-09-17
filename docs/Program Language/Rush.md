@@ -5,9 +5,12 @@ catagory: "Program Language"
 
 List of problem that I used rust to solve
 
-| Problem                 | Last update               |
-| ----------------------- | ------------------------- |
-| [[63. Unique Paths II|63. Unique Paths II]] | 9:26 PM - August 18, 2023 |
+| Problem                             | Last update                   |
+| ----------------------------------- | ----------------------------- |
+| [[134. Gas Station|134. Gas Station]]                | 6:19 PM - September 17, 2023  |
+| [[518. Coin Change II|518. Coin Change II]]             | 10:59 AM - September 09, 2023 |
+| [[63. Unique Paths II|63. Unique Paths II]]             | 12:04 AM - August 30, 2023    |
+| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]] | 7:44 PM - August 26, 2023     |
 
 
 
