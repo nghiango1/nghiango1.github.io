@@ -240,6 +240,36 @@
         "url": "images/Pasted%20image%2020230907081804.png"
     },
     {
+        "src_uri": "images/Pasted image 20230917104342.png",
+        "dest_uri": "images/Pasted%20image%2020230917104342.png",
+        "name": "Pasted image 20230917104342",
+        "url": "images/Pasted%20image%2020230917104342.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230917104400.png",
+        "dest_uri": "images/Pasted%20image%2020230917104400.png",
+        "name": "Pasted image 20230917104400",
+        "url": "images/Pasted%20image%2020230917104400.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230917104410.png",
+        "dest_uri": "images/Pasted%20image%2020230917104410.png",
+        "name": "Pasted image 20230917104410",
+        "url": "images/Pasted%20image%2020230917104410.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230917104437.png",
+        "dest_uri": "images/Pasted%20image%2020230917104437.png",
+        "name": "Pasted image 20230917104437",
+        "url": "images/Pasted%20image%2020230917104437.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230917105257.png",
+        "dest_uri": "images/Pasted%20image%2020230917105257.png",
+        "name": "Pasted image 20230917105257",
+        "url": "images/Pasted%20image%2020230917105257.png"
+    },
+    {
         "src_uri": "notes/.pages",
         "dest_uri": "notes/.pages",
         "name": ".pages",
@@ -606,6 +636,12 @@
         "url": "notes/Leetcode%20100-1000/373.%20Find%20K%20Pairs%20with%20Smallest%20Sums/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/377. Combination Sum IV.md",
+        "dest_uri": "notes/Leetcode%20100-1000/377.%20Combination%20Sum%20IV/",
+        "name": "377. Combination Sum IV",
+        "url": "notes/Leetcode%20100-1000/377.%20Combination%20Sum%20IV/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/380. Insert Delete GetRandom O(1).md",
         "dest_uri": "notes/Leetcode%20100-1000/380.%20Insert%20Delete%20GetRandom%20O%281%29/",
         "name": "380. Insert Delete GetRandom O(1)",
@@ -694,6 +730,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/802.%20Find%20Eventual%20Safe%20States/",
         "name": "802. Find Eventual Safe States",
         "url": "notes/Leetcode%20100-1000/802.%20Find%20Eventual%20Safe%20States/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/847. Shortest Path Visiting All Nodes.md",
+        "dest_uri": "notes/Leetcode%20100-1000/847.%20Shortest%20Path%20Visiting%20All%20Nodes/",
+        "name": "847. Shortest Path Visiting All Nodes",
+        "url": "notes/Leetcode%20100-1000/847.%20Shortest%20Path%20Visiting%20All%20Nodes/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/852. Peak Index in a Mountain Array.md",
