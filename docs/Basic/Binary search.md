@@ -3,7 +3,11 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
+  - python
+  - typescript
+  - O(log n)
 ---
+
 # Problem
 
 Find a element `x` in a sorted array `arr`

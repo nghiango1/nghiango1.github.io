@@ -3,7 +3,10 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
+  - typescript
+  - O(n)
 ---
+
 
 # Problem
 
