@@ -1,9 +1,11 @@
 ---
 share: true
-catagory: "Basic"
+catagory: Basic
 tags:
-    - computer_sience
+  - computer_sience
+  - O(1)
 ---
+
 
 # 1. Problem
 
