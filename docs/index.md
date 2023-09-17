@@ -8,13 +8,13 @@ catagory: "docs"
 Welcome to homepage. Latest problem
 # Latest problem
 
-| Problem                                                    | Last update                   |
-| ---------------------------------------------------------- | ----------------------------- |
-| [[92. Reverse Linked List II|92. Reverse Linked List II]]                             | 9:12 AM - September 07, 2023  |
-| [[138. Copy List with Random Pointer|138. Copy List with Random Pointer]]                     | 10:36 AM - September 05, 2023 |
-| [[62. Unique Paths|62. Unique Paths]]                                       | 11:32 AM - September 03, 2023 |
-| [[338. Counting Bits|338. Counting Bits]]                                     | 11:40 AM - September 03, 2023 |
-| [[1326. Minimum Number of Taps to Open to Water a Garden|1326. Minimum Number of Taps to Open to Water a Garden]] | 11:40 AM - September 03, 2023 |
+| Problem                                   | Last update                   |
+| ----------------------------------------- | ----------------------------- |
+| [[847. Shortest Path Visiting All Nodes|847. Shortest Path Visiting All Nodes]] | 11:38 AM - September 17, 2023 |
+| [[377. Combination Sum IV|377. Combination Sum IV]]               | 10:57 AM - September 09, 2023 |
+| [[92. Reverse Linked List II|92. Reverse Linked List II]]            | 9:12 AM - September 07, 2023  |
+| [[138. Copy List with Random Pointer|138. Copy List with Random Pointer]]    | 10:36 AM - September 05, 2023 |
+| [[62. Unique Paths|62. Unique Paths]]                      | 11:32 AM - September 03, 2023 |
 
 
 # Separated by language
@@ -39,18 +39,20 @@ Welcome to homepage. Latest problem
 
 
 ## Java
-| Problem                                        | Last update                |
-| ---------------------------------------------- | -------------------------- |
-| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 12:07 AM - August 30, 2023 |
-| [[63. Unique Paths II|63. Unique Paths II]]                        | 12:04 AM - August 30, 2023 |
-| [[767. Reorganize String|767. Reorganize String]]                     | 7:44 PM - August 26, 2023  |
+| Problem                                        | Last update                   |
+| ---------------------------------------------- | ----------------------------- |
+| [[518. Coin Change II|518. Coin Change II]]                        | 10:59 AM - September 09, 2023 |
+| [[80. Remove Duplicates from Sorted Array II|80. Remove Duplicates from Sorted Array II]] | 12:07 AM - August 30, 2023    |
+| [[63. Unique Paths II|63. Unique Paths II]]                        | 12:04 AM - August 30, 2023    |
+| [[767. Reorganize String|767. Reorganize String]]                     | 7:44 PM - August 26, 2023     |
 
 
 ## Rust
-| Problem                             | Last update                |
-| ----------------------------------- | -------------------------- |
-| [[63. Unique Paths II|63. Unique Paths II]]             | 12:04 AM - August 30, 2023 |
-| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]] | 7:44 PM - August 26, 2023  |
+| Problem                             | Last update                   |
+| ----------------------------------- | ----------------------------- |
+| [[518. Coin Change II|518. Coin Change II]]             | 10:59 AM - September 09, 2023 |
+| [[63. Unique Paths II|63. Unique Paths II]]             | 12:04 AM - August 30, 2023    |
+| [[459. Repeated Substring Pattern|459. Repeated Substring Pattern]] | 7:44 PM - August 26, 2023     |
 
 
 
