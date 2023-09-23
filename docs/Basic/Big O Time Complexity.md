@@ -52,21 +52,22 @@ We can use a **best case** and **worst case** (or even **average case**) if the 
 
     | Problem                                                    | Last update                   |
 | ---------------------------------------------------------- | ----------------------------- |
+| [[392. Is Subsequence|392. Is Subsequence]]                                    | 9:39 AM - September 23, 2023  |
+| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]]           | 10:12 PM - September 20, 2023 |
 | [[92. Reverse Linked List II|92. Reverse Linked List II]]                             | 9:12 AM - September 07, 2023  |
 | [[338. Counting Bits|338. Counting Bits]]                                     | 11:40 AM - September 03, 2023 |
 | [[1326. Minimum Number of Taps to Open to Water a Garden|1326. Minimum Number of Taps to Open to Water a Garden]] | 11:40 AM - September 03, 2023 |
-| [[2366. Minimum Replacements to Sort the Array|2366. Minimum Replacements to Sort the Array]]           | 10:56 PM - August 30, 2023    |
-| [[Linear search|Linear search]]                                          | 12:33 PM - September 03, 2023 |
 
 
 - `O(n log n)`
 
-    | Problem                                                    | Last update                   |
-| ---------------------------------------------------------- | ----------------------------- |
-| [[148. Sort List|148. Sort List]]                                         | 11:00 PM - September 17, 2023 |
-| [[Quick sort|Quick sort]]                                             | 8:07 PM - September 04, 2023  |
-| [[338. Counting Bits|338. Counting Bits]]                                     | 11:40 AM - September 03, 2023 |
-| [[1326. Minimum Number of Taps to Open to Water a Garden|1326. Minimum Number of Taps to Open to Water a Garden]] | 11:40 AM - September 03, 2023 |
+    | Problem                                          | Last update                   |
+| ------------------------------------------------ | ----------------------------- |
+| [[4. Median of Two Sorted Arrays|4. Median of Two Sorted Arrays]]               | 9:27 PM - September 22, 2023  |
+| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]] | 10:12 PM - September 20, 2023 |
+| [[1337. The K Weakest Rows in a Matrix|1337. The K Weakest Rows in a Matrix]]         | 10:06 AM - September 18, 2023 |
+| [[148. Sort List|148. Sort List]]                               | 11:00 PM - September 17, 2023 |
+| [[Quick sort|Quick sort]]                                   | 8:07 PM - September 04, 2023  |
 
 
 - `O(sqrt n)`
@@ -78,13 +79,13 @@ We can use a **best case** and **worst case** (or even **average case**) if the 
 
 - `O(n ** 2)`
 
-    | Problem                     | Last update                   |
-| --------------------------- | ----------------------------- |
-| [[377. Combination Sum IV|377. Combination Sum IV]] | 10:57 AM - September 09, 2023 |
-| [[Bubble sort|Bubble sort]]             | 5:53 PM - September 04, 2023  |
-| [[63. Unique Paths II|63. Unique Paths II]]     | 12:04 AM - August 30, 2023    |
-| [[134. Gas Station|134. Gas Station]]        | 6:19 PM - September 17, 2023  |
-| [[518. Coin Change II|518. Coin Change II]]     | 10:59 AM - September 09, 2023 |
+    | Problem                                  | Last update                   |
+| ---------------------------------------- | ----------------------------- |
+| [[1337. The K Weakest Rows in a Matrix|1337. The K Weakest Rows in a Matrix]] | 10:06 AM - September 18, 2023 |
+| [[377. Combination Sum IV|377. Combination Sum IV]]              | 10:57 AM - September 09, 2023 |
+| [[Bubble sort|Bubble sort]]                          | 5:53 PM - September 04, 2023  |
+| [[63. Unique Paths II|63. Unique Paths II]]                  | 12:04 AM - August 30, 2023    |
+| [[134. Gas Station|134. Gas Station]]                     | 6:19 PM - September 17, 2023  |
 
 
 - `O(n ** 3)`

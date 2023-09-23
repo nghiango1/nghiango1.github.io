@@ -8,13 +8,13 @@ catagory: "docs"
 Welcome to homepage. Latest problem
 # Latest problem
 
-| Problem                                   | Last update                   |
-| ----------------------------------------- | ----------------------------- |
-| [[148. Sort List|148. Sort List]]                        | 11:00 PM - September 17, 2023 |
-| [[847. Shortest Path Visiting All Nodes|847. Shortest Path Visiting All Nodes]] | 11:38 AM - September 17, 2023 |
-| [[377. Combination Sum IV|377. Combination Sum IV]]               | 10:57 AM - September 09, 2023 |
-| [[92. Reverse Linked List II|92. Reverse Linked List II]]            | 9:12 AM - September 07, 2023  |
-| [[138. Copy List with Random Pointer|138. Copy List with Random Pointer]]    | 10:36 AM - September 05, 2023 |
+| Problem                                          | Last update                   |
+| ------------------------------------------------ | ----------------------------- |
+| [[392. Is Subsequence|392. Is Subsequence]]                          | 9:39 AM - September 23, 2023  |
+| [[4. Median of Two Sorted Arrays|4. Median of Two Sorted Arrays]]               | 9:27 PM - September 22, 2023  |
+| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]] | 10:12 PM - September 20, 2023 |
+| [[149. Max Points on a Line|149. Max Points on a Line]]                    | 10:12 PM - September 19, 2023 |
+| [[1337. The K Weakest Rows in a Matrix|1337. The K Weakest Rows in a Matrix]]         | 10:06 AM - September 18, 2023 |
 
 
 # Separated by language
@@ -29,13 +29,13 @@ Welcome to homepage. Latest problem
 
 
 ## Python
-| Problem                                   | Last update                   |
-| ----------------------------------------- | ----------------------------- |
-| [[134. Gas Station|134. Gas Station]]                      | 6:19 PM - September 17, 2023  |
-| [[847. Shortest Path Visiting All Nodes|847. Shortest Path Visiting All Nodes]] | 11:38 AM - September 17, 2023 |
-| [[518. Coin Change II|518. Coin Change II]]                   | 10:59 AM - September 09, 2023 |
-| [[377. Combination Sum IV|377. Combination Sum IV]]               | 10:57 AM - September 09, 2023 |
-| [[118. Pascal's Triangle|118. Pascal's Triangle]]                | 12:48 AM - September 09, 2023 |
+| Problem                                          | Last update                   |
+| ------------------------------------------------ | ----------------------------- |
+| [[392. Is Subsequence|392. Is Subsequence]]                          | 9:39 AM - September 23, 2023  |
+| [[4. Median of Two Sorted Arrays|4. Median of Two Sorted Arrays]]               | 9:27 PM - September 22, 2023  |
+| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]] | 10:12 PM - September 20, 2023 |
+| [[1337. The K Weakest Rows in a Matrix|1337. The K Weakest Rows in a Matrix]]         | 10:06 AM - September 18, 2023 |
+| [[134. Gas Station|134. Gas Station]]                             | 6:19 PM - September 17, 2023  |
 
 
 ## Java
