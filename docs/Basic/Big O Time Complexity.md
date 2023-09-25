@@ -50,13 +50,13 @@ We can use a **best case** and **worst case** (or even **average case**) if the 
 
 - `O(n)`
 
-    | Problem                                                    | Last update                   |
-| ---------------------------------------------------------- | ----------------------------- |
-| [[392. Is Subsequence|392. Is Subsequence]]                                    | 9:39 AM - September 23, 2023  |
-| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]]           | 10:12 PM - September 20, 2023 |
-| [[92. Reverse Linked List II|92. Reverse Linked List II]]                             | 9:12 AM - September 07, 2023  |
-| [[338. Counting Bits|338. Counting Bits]]                                     | 11:40 AM - September 03, 2023 |
-| [[1326. Minimum Number of Taps to Open to Water a Garden|1326. Minimum Number of Taps to Open to Water a Garden]] | 11:40 AM - September 03, 2023 |
+    | Problem                                          | Last update                   |
+| ------------------------------------------------ | ----------------------------- |
+| [[389. Find the Difference|389. Find the Difference]]                     | 10:36 PM - September 25, 2023 |
+| [[392. Is Subsequence|392. Is Subsequence]]                          | 9:39 AM - September 23, 2023  |
+| [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]] | 10:12 PM - September 20, 2023 |
+| [[92. Reverse Linked List II|92. Reverse Linked List II]]                   | 9:12 AM - September 07, 2023  |
+| [[338. Counting Bits|338. Counting Bits]]                           | 11:40 AM - September 03, 2023 |
 
 
 - `O(n log n)`
