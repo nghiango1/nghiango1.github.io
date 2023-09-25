@@ -10,11 +10,11 @@ Welcome to homepage. Latest problem
 
 | Problem                                          | Last update                   |
 | ------------------------------------------------ | ----------------------------- |
+| [[389. Find the Difference|389. Find the Difference]]                     | 10:36 PM - September 25, 2023 |
+| [[799. Champagne Tower|799. Champagne Tower]]                         | 7:41 AM - September 25, 2023  |
 | [[392. Is Subsequence|392. Is Subsequence]]                          | 9:39 AM - September 23, 2023  |
 | [[4. Median of Two Sorted Arrays|4. Median of Two Sorted Arrays]]               | 9:27 PM - September 22, 2023  |
 | [[1658. Minimum Operations to Reduce X to Zero|1658. Minimum Operations to Reduce X to Zero]] | 10:12 PM - September 20, 2023 |
-| [[149. Max Points on a Line|149. Max Points on a Line]]                    | 10:12 PM - September 19, 2023 |
-| [[1337. The K Weakest Rows in a Matrix|1337. The K Weakest Rows in a Matrix]]         | 10:06 AM - September 18, 2023 |
 
 
 # Separated by language
