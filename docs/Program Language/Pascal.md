@@ -197,10 +197,10 @@ Ref: https://www.freepascal.org/docs-html/ref/refsu4.html#x26-250003.1.1
 
 I will focus on what we mostly used first:
 - `boolean`: can contain TRUE/ FALSE, which can be used for programing logic
-- `shortint`: signed integer 8-bit (between range [2 ** 8 .. 2 ** 8 -1] )
-- `integer`: signed integer 16-bit (between range [2 ** 16 .. 2 ** 16 -1] )
-- `longint`: signed integer 32-bit (between range [2 ** 32 .. 2 ** 32 -1] )
-- `int64`: signed integer 64-bit (between range [2 ** 64 .. 2 ** 64 -1] )
+- `shortint`: signed integer 8-bit (between range `[2 ** 8 .. 2 ** 8 -1]` )
+- `integer`: signed integer 16-bit (between range `[2 ** 16 .. 2 ** 16 -1]` )
+- `longint`: signed integer 32-bit (between range` [2 ** 32 .. 2 ** 32 -1]` )
+- `int64`: signed integer 64-bit (between range `[2 ** 64 .. 2 ** 64 -1]`)
 - `char`: Single character, 8-bit
 - `array`: A static structure of same element, with a unchangeable size and element type after initiation
 - `string`: A variable can storing dynamic array of character, let assuming it is a dynamic character array
@@ -325,7 +325,7 @@ Output:
 4
 ```
 
-## Assign Structural type
+#### Assign Structural type
 
 You can assign each children variable via `.`
 
