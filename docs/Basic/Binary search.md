@@ -101,10 +101,10 @@ print(isFound, lastPossition)
 
 | Problem                                   | Last update                |
 | ----------------------------------------- | -------------------------- |
-| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]] | 12:10 AM - August 30, 2023 |
-| [[274. H-Index|274. H-Index]]                          | 9:49 AM - August 18, 2023  |
-| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                | 12:05 AM - August 30, 2023 |
-| [[84. Largest Rectangle in Histogram|84. Largest Rectangle in Histogram]]    | 12:12 AM - August 30, 2023 |
+| [[74. Search a 2D Matrix|74. Search a 2D Matrix]]                | 8:52 PM - October 02, 2023 |
+| [[84. Largest Rectangle in Histogram|84. Largest Rectangle in Histogram]]    | 8:52 PM - October 02, 2023 |
+| [[81. Search in Rotated Sorted Array II|81. Search in Rotated Sorted Array II]] | 8:52 PM - October 02, 2023 |
+| [[274. H-Index|274. H-Index]]                          | 8:52 PM - October 02, 2023 |
 
 
 ## Typescript implementation
