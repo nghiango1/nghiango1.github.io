@@ -93,7 +93,7 @@ When I talk about **Algorithms and data structures**, I mean this much (as we ca
             - [[Digital search tree|Digital search tree]]: I can't understand this at all. Why the implementation have to be that confuse and unnatural.
             - Radix search tree: A full/trim Trie tree for binary, where the value is build up by the search path (or leaf contained value) so there is no need to comparing on every step like DST.
     - Dynamic programing
-        - Recursive formulation implementation
+        - [[Recursive formulation|Recursive formulation]] implementation
             - Bottom - up approach: This work when we know exactly what needed to calculate before hand and build up to final result.
             - Recursion approach:  This is a more general approach when we can't analyzing what needed to calculate first:
                 - Storing every calculation result.
