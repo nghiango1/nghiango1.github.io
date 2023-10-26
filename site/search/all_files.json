@@ -102,6 +102,12 @@
         "url": "Program%20Language/Rush/"
     },
     {
+        "src_uri": "Program Language/Rust.md",
+        "dest_uri": "Program%20Language/Rust/",
+        "name": "Rust",
+        "url": "Program%20Language/Rust/"
+    },
+    {
         "src_uri": "Query Language/Dataview Query Language.md",
         "dest_uri": "Query%20Language/Dataview%20Query%20Language/",
         "name": "Dataview Query Language",
@@ -366,6 +372,30 @@
         "url": "images/Pasted%20image%2020230923000851.png"
     },
     {
+        "src_uri": "images/Pasted image 20230924105333.png",
+        "dest_uri": "images/Pasted%20image%2020230924105333.png",
+        "name": "Pasted image 20230924105333",
+        "url": "images/Pasted%20image%2020230924105333.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230925234916.png",
+        "dest_uri": "images/Pasted%20image%2020230925234916.png",
+        "name": "Pasted image 20230925234916",
+        "url": "images/Pasted%20image%2020230925234916.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20230925234925.png",
+        "dest_uri": "images/Pasted%20image%2020230925234925.png",
+        "name": "Pasted image 20230925234925",
+        "url": "images/Pasted%20image%2020230925234925.png"
+    },
+    {
+        "src_uri": "images/Pasted image 20231022170933.png",
+        "dest_uri": "images/Pasted%20image%2020231022170933.png",
+        "name": "Pasted image 20231022170933",
+        "url": "images/Pasted%20image%2020231022170933.png"
+    },
+    {
         "src_uri": "notes/.pages",
         "dest_uri": "notes/.pages",
         "name": ".pages",
@@ -516,6 +546,12 @@
         "url": "notes/Leetcode%20100-1000/108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/110. Balanced Binary Tree.md",
+        "dest_uri": "notes/Leetcode%20100-1000/110.%20Balanced%20Binary%20Tree/",
+        "name": "110. Balanced Binary Tree",
+        "url": "notes/Leetcode%20100-1000/110.%20Balanced%20Binary%20Tree/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/116. Populating Next Right Pointers in Each Node.md",
         "dest_uri": "notes/Leetcode%20100-1000/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node/",
         "name": "116. Populating Next Right Pointers in Each Node",
@@ -526,6 +562,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/118.%20Pascal%27s%20Triangle/",
         "name": "118. Pascal's Triangle",
         "url": "notes/Leetcode%20100-1000/118.%20Pascal%27s%20Triangle/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/119. Pascal's Triangle II.md",
+        "dest_uri": "notes/Leetcode%20100-1000/119.%20Pascal%27s%20Triangle%20II/",
+        "name": "119. Pascal's Triangle II",
+        "url": "notes/Leetcode%20100-1000/119.%20Pascal%27s%20Triangle%20II/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/121. Best Time to Buy and Sell Stock.md",
@@ -610,6 +652,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/149.%20Max%20Points%20on%20a%20Line/",
         "name": "149. Max Points on a Line",
         "url": "notes/Leetcode%20100-1000/149.%20Max%20Points%20on%20a%20Line/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/150. Evaluate Reverse Polish Notation.md",
+        "dest_uri": "notes/Leetcode%20100-1000/150.%20Evaluate%20Reverse%20Polish%20Notation/",
+        "name": "150. Evaluate Reverse Polish Notation",
+        "url": "notes/Leetcode%20100-1000/150.%20Evaluate%20Reverse%20Polish%20Notation/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/168. Excel Sheet Column Title.md",
@@ -768,6 +816,12 @@
         "url": "notes/Leetcode%20100-1000/387.%20First%20Unique%20Character%20in%20a%20String/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/389. Find the Difference.md",
+        "dest_uri": "notes/Leetcode%20100-1000/389.%20Find%20the%20Difference/",
+        "name": "389. Find the Difference",
+        "url": "notes/Leetcode%20100-1000/389.%20Find%20the%20Difference/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/392. Is Subsequence.md",
         "dest_uri": "notes/Leetcode%20100-1000/392.%20Is%20Subsequence/",
         "name": "392. Is Subsequence",
@@ -790,6 +844,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/445.%20Add%20Two%20Numbers%20II/",
         "name": "445. Add Two Numbers II",
         "url": "notes/Leetcode%20100-1000/445.%20Add%20Two%20Numbers%20II/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/456. 132 Pattern.md",
+        "dest_uri": "notes/Leetcode%20100-1000/456.%20132%20Pattern/",
+        "name": "456. 132 Pattern",
+        "url": "notes/Leetcode%20100-1000/456.%20132%20Pattern/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/459. Repeated Substring Pattern.md",
@@ -840,10 +900,22 @@
         "url": "notes/Leetcode%20100-1000/735.%20Asteroid%20Collision/"
     },
     {
+        "src_uri": "notes/Leetcode 100-1000/746. Min Cost Climbing Stairs.md",
+        "dest_uri": "notes/Leetcode%20100-1000/746.%20Min%20Cost%20Climbing%20Stairs/",
+        "name": "746. Min Cost Climbing Stairs",
+        "url": "notes/Leetcode%20100-1000/746.%20Min%20Cost%20Climbing%20Stairs/"
+    },
+    {
         "src_uri": "notes/Leetcode 100-1000/767. Reorganize String.md",
         "dest_uri": "notes/Leetcode%20100-1000/767.%20Reorganize%20String/",
         "name": "767. Reorganize String",
         "url": "notes/Leetcode%20100-1000/767.%20Reorganize%20String/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/799. Champagne Tower.md",
+        "dest_uri": "notes/Leetcode%20100-1000/799.%20Champagne%20Tower/",
+        "name": "799. Champagne Tower",
+        "url": "notes/Leetcode%20100-1000/799.%20Champagne%20Tower/"
     },
     {
         "src_uri": "notes/Leetcode 100-1000/802. Find Eventual Safe States.md",
@@ -874,6 +946,12 @@
         "dest_uri": "notes/Leetcode%20100-1000/894.%20All%20Possible%20Full%20Binary%20Trees/",
         "name": "894. All Possible Full Binary Trees",
         "url": "notes/Leetcode%20100-1000/894.%20All%20Possible%20Full%20Binary%20Trees/"
+    },
+    {
+        "src_uri": "notes/Leetcode 100-1000/905. Sort Array By Parity.md",
+        "dest_uri": "notes/Leetcode%20100-1000/905.%20Sort%20Array%20By%20Parity/",
+        "name": "905. Sort Array By Parity",
+        "url": "notes/Leetcode%20100-1000/905.%20Sort%20Array%20By%20Parity/"
     },
     {
         "src_uri": "notes/Leetcode 1000-10000/1125. Smallest Sufficient Team.md",
@@ -930,6 +1008,12 @@
         "url": "notes/Leetcode%201000-10000/1751.%20Maximum%20Number%20of%20Events%20That%20Can%20Be%20Attended%20II/"
     },
     {
+        "src_uri": "notes/Leetcode 1000-10000/1793. Maximum Score of a Good Subarray.md",
+        "dest_uri": "notes/Leetcode%201000-10000/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/",
+        "name": "1793. Maximum Score of a Good Subarray",
+        "url": "notes/Leetcode%201000-10000/1793.%20Maximum%20Score%20of%20a%20Good%20Subarray/"
+    },
+    {
         "src_uri": "notes/Leetcode 1000-10000/1802. Maximum Value at a Given Index in a Bounded Array.md",
         "dest_uri": "notes/Leetcode%201000-10000/1802.%20Maximum%20Value%20at%20a%20Given%20Index%20in%20a%20Bounded%20Array/",
         "name": "1802. Maximum Value at a Given Index in a Bounded Array",
@@ -940,6 +1024,12 @@
         "dest_uri": "notes/Leetcode%201000-10000/2008.%20Maximum%20Earnings%20From%20Taxi/",
         "name": "2008. Maximum Earnings From Taxi",
         "url": "notes/Leetcode%201000-10000/2008.%20Maximum%20Earnings%20From%20Taxi/"
+    },
+    {
+        "src_uri": "notes/Leetcode 1000-10000/2038. Remove Colored Pieces if Both Neighbors are the Same Color.md",
+        "dest_uri": "notes/Leetcode%201000-10000/2038.%20Remove%20Colored%20Pieces%20if%20Both%20Neighbors%20are%20the%20Same%20Color/",
+        "name": "2038. Remove Colored Pieces if Both Neighbors are the Same Color",
+        "url": "notes/Leetcode%201000-10000/2038.%20Remove%20Colored%20Pieces%20if%20Both%20Neighbors%20are%20the%20Same%20Color/"
     },
     {
         "src_uri": "notes/Leetcode 1000-10000/2140. Questions With Brainpower.md",
@@ -1002,16 +1092,16 @@
         "url": "assets/images/favicon.png"
     },
     {
-        "src_uri": "assets/javascripts/bundle.220ee61c.min.js",
-        "dest_uri": "assets/javascripts/bundle.220ee61c.min.js",
-        "name": "bundle.220ee61c.min",
-        "url": "assets/javascripts/bundle.220ee61c.min.js"
+        "src_uri": "assets/javascripts/bundle.dff1b7c8.min.js",
+        "dest_uri": "assets/javascripts/bundle.dff1b7c8.min.js",
+        "name": "bundle.dff1b7c8.min",
+        "url": "assets/javascripts/bundle.dff1b7c8.min.js"
     },
     {
-        "src_uri": "assets/javascripts/bundle.220ee61c.min.js.map",
-        "dest_uri": "assets/javascripts/bundle.220ee61c.min.js.map",
-        "name": "bundle.220ee61c.min.js",
-        "url": "assets/javascripts/bundle.220ee61c.min.js.map"
+        "src_uri": "assets/javascripts/bundle.dff1b7c8.min.js.map",
+        "dest_uri": "assets/javascripts/bundle.dff1b7c8.min.js.map",
+        "name": "bundle.dff1b7c8.min.js",
+        "url": "assets/javascripts/bundle.dff1b7c8.min.js.map"
     },
     {
         "src_uri": "assets/javascripts/lunr/min/lunr.ar.min.js",
@@ -1054,6 +1144,12 @@
         "dest_uri": "assets/javascripts/lunr/min/lunr.fr.min.js",
         "name": "lunr.fr.min",
         "url": "assets/javascripts/lunr/min/lunr.fr.min.js"
+    },
+    {
+        "src_uri": "assets/javascripts/lunr/min/lunr.he.min.js",
+        "dest_uri": "assets/javascripts/lunr/min/lunr.he.min.js",
+        "name": "lunr.he.min",
+        "url": "assets/javascripts/lunr/min/lunr.he.min.js"
     },
     {
         "src_uri": "assets/javascripts/lunr/min/lunr.hi.min.js",
@@ -1206,39 +1302,39 @@
         "url": "assets/javascripts/lunr/wordcut.js"
     },
     {
-        "src_uri": "assets/javascripts/workers/search.74e28a9f.min.js",
-        "dest_uri": "assets/javascripts/workers/search.74e28a9f.min.js",
-        "name": "search.74e28a9f.min",
-        "url": "assets/javascripts/workers/search.74e28a9f.min.js"
+        "src_uri": "assets/javascripts/workers/search.dfff1995.min.js",
+        "dest_uri": "assets/javascripts/workers/search.dfff1995.min.js",
+        "name": "search.dfff1995.min",
+        "url": "assets/javascripts/workers/search.dfff1995.min.js"
     },
     {
-        "src_uri": "assets/javascripts/workers/search.74e28a9f.min.js.map",
-        "dest_uri": "assets/javascripts/workers/search.74e28a9f.min.js.map",
-        "name": "search.74e28a9f.min.js",
-        "url": "assets/javascripts/workers/search.74e28a9f.min.js.map"
+        "src_uri": "assets/javascripts/workers/search.dfff1995.min.js.map",
+        "dest_uri": "assets/javascripts/workers/search.dfff1995.min.js.map",
+        "name": "search.dfff1995.min.js",
+        "url": "assets/javascripts/workers/search.dfff1995.min.js.map"
     },
     {
-        "src_uri": "assets/stylesheets/main.eebd395e.min.css",
-        "dest_uri": "assets/stylesheets/main.eebd395e.min.css",
-        "name": "main.eebd395e.min",
-        "url": "assets/stylesheets/main.eebd395e.min.css"
+        "src_uri": "assets/stylesheets/main.046329b4.min.css",
+        "dest_uri": "assets/stylesheets/main.046329b4.min.css",
+        "name": "main.046329b4.min",
+        "url": "assets/stylesheets/main.046329b4.min.css"
     },
     {
-        "src_uri": "assets/stylesheets/main.eebd395e.min.css.map",
-        "dest_uri": "assets/stylesheets/main.eebd395e.min.css.map",
-        "name": "main.eebd395e.min.css",
-        "url": "assets/stylesheets/main.eebd395e.min.css.map"
+        "src_uri": "assets/stylesheets/main.046329b4.min.css.map",
+        "dest_uri": "assets/stylesheets/main.046329b4.min.css.map",
+        "name": "main.046329b4.min.css",
+        "url": "assets/stylesheets/main.046329b4.min.css.map"
     },
     {
-        "src_uri": "assets/stylesheets/palette.ecc896b0.min.css",
-        "dest_uri": "assets/stylesheets/palette.ecc896b0.min.css",
-        "name": "palette.ecc896b0.min",
-        "url": "assets/stylesheets/palette.ecc896b0.min.css"
+        "src_uri": "assets/stylesheets/palette.85d0ee34.min.css",
+        "dest_uri": "assets/stylesheets/palette.85d0ee34.min.css",
+        "name": "palette.85d0ee34.min",
+        "url": "assets/stylesheets/palette.85d0ee34.min.css"
     },
     {
-        "src_uri": "assets/stylesheets/palette.ecc896b0.min.css.map",
-        "dest_uri": "assets/stylesheets/palette.ecc896b0.min.css.map",
-        "name": "palette.ecc896b0.min.css",
-        "url": "assets/stylesheets/palette.ecc896b0.min.css.map"
+        "src_uri": "assets/stylesheets/palette.85d0ee34.min.css.map",
+        "dest_uri": "assets/stylesheets/palette.85d0ee34.min.css.map",
+        "name": "palette.85d0ee34.min.css",
+        "url": "assets/stylesheets/palette.85d0ee34.min.css.map"
     }
 ]
