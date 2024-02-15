@@ -6,6 +6,12 @@
         "url": "./"
     },
     {
+        "src_uri": "resume.md",
+        "dest_uri": "resume/",
+        "name": "resume",
+        "url": "resume/"
+    },
+    {
         "src_uri": "tags.md",
         "dest_uri": "tags/",
         "name": "tags",
