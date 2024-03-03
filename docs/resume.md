@@ -7,7 +7,7 @@
 
 ## ABOUT ME
 
-The journey of learning code began in my high school year (2012). Quickly reach national level in Academic and achieved 3rd pride in "Kì thi chọn học sinh giỏi quốc gia trung học phổ thông Tin học" in VietNam (2014) (which identifying top talent of Vietnam that will compete in [International Science Olympiads in Informatics](https://ioinformatics.org/)). After fullfilling the military service obligation, I can once more  pursue my passion for coding.
+The journey of learning code began in my high school year (2012). Quickly reach national level in Academic and achieved 3rd pride in "Kì thi chọn học sinh giỏi quốc gia trung học phổ thông Tin học" in VietNam (2014) (which identifying top talent of Vietnam to compete in [International Science Olympiads in Informatics](https://ioinformatics.org/)). After fullfilling the military service obligation, I can once more pursue my passion for coding.
 
 ## SKILL
 
@@ -25,18 +25,13 @@ The journey of learning code began in my high school year (2012). Quickly reach 
 
 ## PROJECT
 
+### [interpreter-in-go](https://github.com/nghiango1/hello/tree/main/go/interpreter) - Live [website](https://aea5-113-20-109-15.ngrok-free.app/)
+- "interpreter-in-go" (of InterinGo for short) is a new interpreter language. It have a read-print-evaluation-loop (or REPL) environment that also can be serve as a HTTP server
+- Tech stack: Go, Javascript, HTMX, Tailwind
+
 ### [MouseMoveMode](https://github.com/nghiango1/RightClickMoveMode)
-- "MouseMoveMode" is 5 years old side project that I still maintaining (bugfix and update). It add mouse-control (to move character) functionality for Stardrew Valley that reach over 11,000 unique users on [Nexus](https://www.nexusmods.com/stardewvalley/mods/2614)
-- Tech stack: C#, SMAPI, IL Bytecode patching
-
-### [Chatti](https://github.com/nghiango1/Chatti)
-- "Chatti" is a chat application project, that I have a all in one server: in-memory RAM data store as backend, Websocket server, Tailwind/Http site as Client in python
-- Tech stack: Python, Flask, Tailwind
-
-### [interpreter-in-go](https://github.com/nghiango1/hello/tree/main/go/interpreter)
-- "interpreter-in-go" is a interpreter language implement in go language. It complied with REPL program that you can use like python
-- Tech stack: Go
-
+- "MouseMoveMode" is 5 years old project that add mouse-control to move player functionality for Stardrew Valley. It reach over 11,000 unique users on [Nexus](https://www.nexusmods.com/stardewvalley/mods/2614)
+- Tech stack: C#, IL Bytecode patching
 
 ## EMPLOYMENT
 
@@ -71,4 +66,4 @@ Bachelor's Degree of Information Security Engineer, Học viện An ninh nhân d
 
 Third prized in "Kì thi chọn học sinh giỏi quốc gia trung học phổ thông Tin học" (National Excellent Student Selection Exam for Computer Science of Vietnam) (2014)
 
-Consultation prizes in ASEAN Student Contest on Information Security - [ASCIS](https://ascis.vnisa.org.vn/en/the-final-result-of-the-student-contest-on-information-security-2019/) (2019)
+Consultation prizes in CTF contest [ASEAN Student Contest on Information Security] (https://ascis.vnisa.org.vn/en/the-final-result-of-the-student-contest-on-information-security-2019/) as team Y45uno (2019)
