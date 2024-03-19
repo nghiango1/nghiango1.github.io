@@ -14,7 +14,7 @@ The journey of learning code began in my high school year (2012). Quickly reach 
 ### IT
 - Python, Go, C/C++, Javascript, Java
 - SQL/PostgreSQL/Oracle, Web application, Infrastructure management
-- VM, Docker/Container
+- Docker/Container, Microservice, Distributed system, VM
 - Machine Learning
 
 ### Soft Skills
@@ -25,9 +25,13 @@ The journey of learning code began in my high school year (2012). Quickly reach 
 
 ## PROJECT
 
-### [interpreter-in-go](https://github.com/nghiango1/hello/tree/main/go/interpreter) - Live [website](https://aea5-113-20-109-15.ngrok-free.app/)
+### [interpreter-in-go](https://github.com/nghiango1/hello/tree/main/go/interpreter) - Live [website](https://nghiango.asia/)
 - "interpreter-in-go" (of InterinGo for short) is a new interpreter language. It have a read-print-evaluation-loop (or REPL) environment that also can be serve as a HTTP server
 - Tech stack: Go, Javascript, HTMX, Tailwind
+
+### [WebDefaceDetection](https://github.com/nghiango1/WebDefaceDetection)
+- A research project aim to build a new detection tool for website deface attack using machine learning base on processing dynamic/static web-crawling data.
+- Tech stack: Python, Machine learning, Research
 
 ### [MouseMoveMode](https://github.com/nghiango1/RightClickMoveMode)
 - "MouseMoveMode" is 5 years old project that add mouse-control to move player functionality for Stardrew Valley. It reach over 11,000 unique users on [Nexus](https://www.nexusmods.com/stardewvalley/mods/2614)
@@ -35,7 +39,7 @@ The journey of learning code began in my high school year (2012). Quickly reach 
 
 ## EMPLOYMENT
 
-### **Vietnam's Resident Database** - Team manager, NOC operator
+### Team manager, NOC operator - **Vietnam's Resident Database**
 (Oct 2020 – Jan 2022)
 - Led a team of 6 as a secondary team lead. Responsible for installation, configuration, maintenance, and monitoring of network infrastructure and systems of the Disaster Recovery infrastructure of Vietnam's Resident Database
 - Common infrastructure: UPS, Generator, PDU, Sensor, Cooling system
@@ -43,13 +47,13 @@ The journey of learning code began in my high school year (2012). Quickly reach 
 - Consisting on-site datacenter solution of: Checkpoint, Oracle, Schneider, etc.
 
 
-### **Vietnam's Resident Database** - Team manager, Project manager
+### Team manager, Project manager - **Vietnam's Resident Database**
 (Jan 2022 – Feb 2023)
 - Led a team of 3 as a secondary team lead. Responsible for collaborated with other Ministry departments on Resident-related projects that spanned the nation.
 - Led evaluation, reporting, and recommendation to inform Upper Leadership's instruction, both internally within the Ministry of Public Security and across other Ministries at the national level.
 - Projects included using National Identify Numbers to replace Social Health Insurance IDs, Social Insurance IDs, Tax Identification Numbers, and Driver's Licenses; as well as Resident Data cleaning for most of the Ministry.
 
-### **Vietnam's Resident Database** - Team manager, IT manager
+### Team manager, IT manager - **Vietnam's Resident Database**
 (Feb 2023 – Present)
 - Led a team of 3 as a secondary team lead. Responsible for managed the public APIs of Vietnam's Resident Database, ensuring integration with other Ministry developer's applications
 - Registered new services; updated existing ones in the API registry, provided technical support, developed documentation and training materials.
