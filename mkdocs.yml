@@ -1,9 +1,9 @@
-site_name: leetcode-note # Change this to your site name
-site_description: A cool description of your site
-site_url: https://ylsama.github.io/ # Change this to your site URL
+site_name: Daily Note # Change this to your site name
+site_description: Punlic-able notes
+site_url: https://nghiango1.github.io/ # Change this to your site URL
 
 theme:
-    name: 'material'
+    name: material
     logo: assets/images/favicon.png
     favicon: assets/images/favicon.png
     custom_dir: overrides
@@ -64,9 +64,6 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.tasklist:
        custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - admonition
   - toc:
       permalink: true
