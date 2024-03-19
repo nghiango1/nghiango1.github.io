@@ -1063,37 +1063,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#definition-for-singly-linked-list-class-listnode-def-__init__self-val0-nextnone-selfval-val-selfnext-next-class-solution-def-addtwonumbersself-l1-optionallistnode-l2-optionallistnode-optionallistnode-n-0-p-l1-while-p-n-10-n-pval-p-pnext-m-0-q-l2-while-q-m-10-m-qval-q-qnext-result-n-m-if-result-0-return-listnode0-head-none-while-result-0-head-listnoderesult10-head-result-10-return-head">
-    # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&gt; Optional[ListNode]:
-        n = 0
-        p = l1
-        while p:
-            n *= 10
-            n += p.val
-            p = p.next
-        m = 0
-
-        q = l2
-        while q:
-            m *= 10
-            m += q.val
-            q = q.next
-
-        result = n + m
-        if result == 0:
-            return ListNode(0)
-
-        head = None
-        while result &gt; 0:
-            head = ListNode(result%10, head)
-            result //= 10
-        return head
-
+    # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&gt; Optional[ListNode]: n = 0 p = l1 while p: n *= 10 n += p.val p = p.next m = 0 q = l2 while q: m *= 10 m += q.val q = q.next result = n + m if result == 0: return ListNode(0) head = None while result &gt; 0: head = ListNode(result%10, head) result //= 10 return head
   </a>
 </li>
 <li class="md-nav__item">
@@ -1447,37 +1417,7 @@ class Solution:
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#definition-for-singly-linked-list-class-listnode-def-__init__self-val0-nextnone-selfval-val-selfnext-next-class-solution-def-addtwonumbersself-l1-optionallistnode-l2-optionallistnode-optionallistnode-n-0-p-l1-while-p-n-10-n-pval-p-pnext-m-0-q-l2-while-q-m-10-m-qval-q-qnext-result-n-m-if-result-0-return-listnode0-head-none-while-result-0-head-listnoderesult10-head-result-10-return-head">
-    # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&gt; Optional[ListNode]:
-        n = 0
-        p = l1
-        while p:
-            n *= 10
-            n += p.val
-            p = p.next
-        m = 0
-
-        q = l2
-        while q:
-            m *= 10
-            m += q.val
-            q = q.next
-
-        result = n + m
-        if result == 0:
-            return ListNode(0)
-
-        head = None
-        while result &gt; 0:
-            head = ListNode(result%10, head)
-            result //= 10
-        return head
-
+    # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -&gt; Optional[ListNode]: n = 0 p = l1 while p: n *= 10 n += p.val p = p.next m = 0 q = l2 while q: m *= 10 m += q.val q = q.next result = n + m if result == 0: return ListNode(0) head = None while result &gt; 0: head = ListNode(result%10, head) result //= 10 return head
   </a>
 </li>
 <li class="md-nav__item">
