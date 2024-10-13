@@ -3,10 +3,7 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
-  - python
-  - O(n ** 2)
 ---
-
 # Problem
 
 Given a array `arr`, sort the array (in memory)

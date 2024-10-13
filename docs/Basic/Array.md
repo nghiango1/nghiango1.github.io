@@ -3,9 +3,7 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
-  - O(1)
 ---
-
 
 # 1. Problem
 
