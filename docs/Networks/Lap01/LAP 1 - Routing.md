@@ -1,8 +1,8 @@
 ---
 share: true
-catagory: "Networks/Lap01"
+catagory: Networks/Lap01
 tags:
-    - network
+  - network
 ---
 # Problem
 
@@ -49,6 +49,12 @@ or
 
 ```bash
 sudo route add -net 192.168.2.0/24 gw 10.243.143.44
+```
+
+or (for windows reference)
+
+```
+route add 192.168.1.0 mask 255.255.255.0 10.243.143.44 IF 10.243.143.47
 ```
 
 Result route table on Admin PC after update should look like this
