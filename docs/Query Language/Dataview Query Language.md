@@ -1,6 +1,6 @@
 ---
 share: true
-catagory: "Query Language"
+catagory: Query Language
 ---
 
 > Have some use case in Obsidian notes, this note is for reference that what I used
@@ -10,7 +10,7 @@ catagory: "Query Language"
 Or LIST/TABLE can be used to render the content
 
 ```dql
-TABLE WITHOUT ID "[[" + file.name + "|" + file.name + "]]" as "Problem", <column>
+TABLE WITHOUT ID "[[" + file.name + "]]" as "Problem", <column>
 FROM <file/folder/tag>
 WHERE <expression>
 SORT <column> (DESC)
