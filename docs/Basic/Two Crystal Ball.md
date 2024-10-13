@@ -3,12 +3,7 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
-  - python
-  - typescript
-  - c
-  - O(sqrt n)
 ---
-
 
 # Problem
 
