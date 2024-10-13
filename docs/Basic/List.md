@@ -3,9 +3,7 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
-  - pascal
 ---
-
 # Problem
 
 What is a List?
