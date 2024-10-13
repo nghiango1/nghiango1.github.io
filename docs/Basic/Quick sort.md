@@ -3,11 +3,7 @@ share: true
 catagory: Basic
 tags:
   - computer_sience
-  - pascal
-  - c
-  - O(n log n)
 ---
-
 # Problem
 
 Given a array `arr`, sort the array (in memory)
